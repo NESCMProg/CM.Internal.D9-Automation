@@ -1,0 +1,209 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>26/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Mar 10 20:10:57 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>1057 seconds (1057386 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='teseCases.CreateNewsArticlesTestPage.newArticleCreateTest()'><b>newArticleCreateTest</b><br>Test class: teseCases.CreateNewsArticlesTestPage<br>Parameters: DynaMed News Article, Jonny</td>
+<td></td>
+<td>9</td>
+<td>teseCases.CreateNewsArticlesTestPage@3e58a80e</td></tr>
+<tr>
+<td title='teseCases.LoginPageTest.loginTest()'><b>loginTest</b><br>Test class: teseCases.LoginPageTest<br>Parameters: NESadmin, NES2021!</td>
+<td></td>
+<td>14</td>
+<td>teseCases.LoginPageTest@61df66b6</td></tr>
+<tr>
+<td title='teseCases.DeleteResourceFlowTest.deleteTest()'><b>deleteTest</b><br>Test class: teseCases.DeleteResourceFlowTest<br>Parameters: Verizon Resource, 3.60029145E8, Verizon Resource pvt. Ltd, Sharon, Verizon Resource</td>
+<td></td>
+<td>19</td>
+<td>teseCases.DeleteResourceFlowTest@4466af20</td></tr>
+<tr>
+<td title='teseCases.DeletePagesTest.deletePageTest()'><b>deletePageTest</b><br>Test class: teseCases.DeletePagesTest<br>Parameters: PubMed Page, PubMed Page</td>
+<td></td>
+<td>21</td>
+<td>teseCases.DeletePagesTest@5876a9af</td></tr>
+<tr>
+<td title='teseCases.CreateCalloutTestPage.newcalloutcreatetest()'><b>newcalloutcreatetest</b><br>Test class: teseCases.CreateCalloutTestPage<br>Parameters: Excel Callouts-1</td>
+<td></td>
+<td>14</td>
+<td>teseCases.CreateCalloutTestPage@6356695f</td></tr>
+<tr>
+<td title='teseCases.EditDatabaseListingTest.provideDatabaseListTitle()'><b>provideDatabaseListTitle</b><br>Test class: teseCases.EditDatabaseListingTest<br>Parameters: Verizon, Cred DBL-E, https://www.stacksdiscovery.com/, https://www.google.co.in/, Cred DBL-E</td>
+<td></td>
+<td>32</td>
+<td>teseCases.EditDatabaseListingTest@7b9a4292</td></tr>
+<tr>
+<td title='teseCases.DeleteCustomTest.deleteTest()'><b>deleteTest</b><br>Test class: teseCases.DeleteCustomTest<br>Parameters: Cinahal Custom, Cinahal Custom revision log, Cinahal Custom</td>
+<td></td>
+<td>21</td>
+<td>teseCases.DeleteCustomTest@12468a38</td></tr>
+<tr>
+<td title='teseCases.EditCalloutsTest.provideCalloutTitle()'><b>provideCalloutTitle</b><br>Test class: teseCases.EditCalloutsTest<br>Parameters: Verizon Research, Cred Resarch-M</td>
+<td></td>
+<td>31</td>
+<td>teseCases.EditCalloutsTest@4f18837a</td></tr>
+<tr>
+<td title='teseCases.EditCustomBlockTest.provideCustomBLockTitle()'><b>provideCustomBLockTitle</b><br>Test class: teseCases.EditCustomBlockTest<br>Parameters: Verizon Custom, Cred Custom-E, Cred Custom-E Log</td>
+<td></td>
+<td>10</td>
+<td>teseCases.EditCustomBlockTest@9f116cc</td></tr>
+<tr>
+<td title='teseCases.CreatePagesTestPage.newPageCreateTest()'><b>newPageCreateTest</b><br>Test class: teseCases.CreatePagesTestPage<br>Parameters: Cinahal description Page</td>
+<td></td>
+<td>8</td>
+<td>teseCases.CreatePagesTestPage@1aa7ecca</td></tr>
+<tr>
+<td title='teseCases.EditResourceFlowsTest.provideResourceTitle()'><b>provideResourceTitle</b><br>Test class: teseCases.EditResourceFlowsTest<br>Parameters: Verizon Research, Cred Resources, 3.60029147E8, Cred Resources pvt ltd, James</td>
+<td></td>
+<td>31</td>
+<td>teseCases.EditResourceFlowsTest@4f6ee6e4</td></tr>
+<tr>
+<td title='teseCases.EditNewsArticlesTest.provideNewsArticleTitle()'><b>provideNewsArticleTitle</b><br>Test class: teseCases.EditNewsArticlesTest<br>Parameters: Verizon Research, Cred Resources, Neliez</td>
+<td></td>
+<td>31</td>
+<td>teseCases.EditNewsArticlesTest@4fb61f4a</td></tr>
+<tr>
+<td title='teseCases.DeleteCalloutTest.deleteTest()'><b>deleteTest</b><br>Test class: teseCases.DeleteCalloutTest<br>Parameters: pubmed, pubmed</td>
+<td></td>
+<td>18</td>
+<td>teseCases.DeleteCalloutTest@359f7cdf</td></tr>
+<tr>
+<td title='teseCases.DeleteDatabaseListingTest.deleteTest()'><b>deleteTest</b><br>Test class: teseCases.DeleteDatabaseListingTest<br>Parameters: Pubmed DBL, https://www.google.co.in/, https://www.google.co.in/, Pubmed Link Text, Pubmed DBL</td>
+<td></td>
+<td>27</td>
+<td>teseCases.DeleteDatabaseListingTest@4a94ee4</td></tr>
+<tr>
+<td title='teseCases.DeleteResearchGuideTest.deleteResearchGuideTest()'><b>deleteResearchGuideTest</b><br>Test class: teseCases.DeleteResearchGuideTest<br>Parameters: PubMed Research, DemoType, PubMed Research Title, https://www.google.co.in/, PubMed Research</td>
+<td></td>
+<td>29</td>
+<td>teseCases.DeleteResearchGuideTest@6572421</td></tr>
+<tr>
+<td title='teseCases.LoginPageTest.loginTest()'><b>loginTest</b><br>Test class: teseCases.LoginPageTest<br>Parameters: NESAdmin, NESNES</td>
+<td></td>
+<td>30</td>
+<td>teseCases.LoginPageTest@61df66b6</td></tr>
+<tr>
+<td title='teseCases.EditPagesTest.providePageTitle()'><b>providePageTitle</b><br>Test class: teseCases.EditPagesTest<br>Parameters: Corpus Limited, Cinahal-E</td>
+<td></td>
+<td>31</td>
+<td>teseCases.EditPagesTest@59309333</td></tr>
+<tr>
+<td title='teseCases.DeleteDirectoryListingTest.deleteTest()'><b>deleteTest</b><br>Test class: teseCases.DeleteDirectoryListingTest<br>Parameters: Pubmed, Directory, Manager, Texas, https://www.google.co.in/, Linkedin Text, Pubmed, Directory</td>
+<td></td>
+<td>18</td>
+<td>teseCases.DeleteDirectoryListingTest@294425a7</td></tr>
+<tr>
+<td title='teseCases.CreateResourceFlowTestPage.newResourceFlowTest()'><b>newResourceFlowTest</b><br>Test class: teseCases.CreateResourceFlowTestPage<br>Parameters: Resource Title-31, 3.60029145E8, Resource SubTitle-31, Nilesh</td>
+<td></td>
+<td>10</td>
+<td>teseCases.CreateResourceFlowTestPage@1fa268de</td></tr>
+<tr>
+<td title='teseCases.CreateResearchGuidesTestPage.newResearchGuideTest()'><b>newResearchGuideTest</b><br>Test class: teseCases.CreateResearchGuidesTestPage<br>Parameters: DynaMed Plus RG, DemoType, DynaMed Plus RG tab-1, https://www.google.co.in/</td>
+<td></td>
+<td>19</td>
+<td>teseCases.CreateResearchGuidesTestPage@7ec7ffd3</td></tr>
+<tr>
+<td title='teseCases.DeleteNewsArticleTest.deleteTest()'><b>deleteTest</b><br>Test class: teseCases.DeleteNewsArticleTest<br>Parameters: Medline News Article, Miraj, Medline News Article</td>
+<td></td>
+<td>18</td>
+<td>teseCases.DeleteNewsArticleTest@4fb0f2b9</td></tr>
+<tr>
+<td title='teseCases.CreateDataBaseListingsTestPage.newDBLCreateTest()'><b>newDBLCreateTest</b><br>Test class: teseCases.CreateDataBaseListingsTestPage<br>Parameters: MedLine Listing, https://www.google.co.in/, https://www.stacksdiscovery.com/, Stacks Discovery</td>
+<td></td>
+<td>15</td>
+<td>teseCases.CreateDataBaseListingsTestPage@79924b</td></tr>
+<tr>
+<td title='teseCases.EditDirectoryListingsTest.provideDirectoryListTitle()'><b>provideDirectoryListTitle</b><br>Test class: teseCases.EditDirectoryListingsTest<br>Parameters: Verizon, Directory, Cinahal , DL-E, Production Manager, New York, https://www.stacksdiscovery.com/, Twitter-E</td>
+<td></td>
+<td>31</td>
+<td>teseCases.EditDirectoryListingsTest@6379eb</td></tr>
+<tr>
+<td title='teseCases.EditResearchGuidesTest.provideResearchGuideTitleTitle()'><b>provideResearchGuideTitleTitle</b><br>Test class: teseCases.EditResearchGuidesTest<br>Parameters: Corpus Limited, Cinahal-E</td>
+<td></td>
+<td>32</td>
+<td>teseCases.EditResearchGuidesTest@5b239d7d</td></tr>
+<tr>
+<td title='teseCases.createDirectoryListingsTestPage.newdirectorycreatetest()'><b>newdirectorycreatetest</b><br>Test class: teseCases.createDirectoryListingsTestPage<br>Parameters: Directory, Listing1, Project developer, Texas, https://www.linkedin.com/, Linkedin Text</td>
+<td></td>
+<td>9</td>
+<td>teseCases.createDirectoryListingsTestPage@4cc451f2</td></tr>
+<tr>
+<td title='teseCases.CreateCustomBlockTestPage.newCustomCreateTest()'><b>newCustomCreateTest</b><br>Test class: teseCases.CreateCustomBlockTestPage<br>Parameters: Enterprise Custom, Revision Log Enterprise Custom</td>
+<td></td>
+<td>9</td>
+<td>teseCases.CreateCustomBlockTestPage@67d48005</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,455 @@
+Browser Opened the Application
+Test Case ID: TS_LP_01
+Test Designed By: Charan
+Test Priority: High
+Test Executed By: cchitneedi
+Test Executed Date: 2022-03-11 12:24:21
+Test Description: Open application in browser. Then give right patron credentials and click on Login button. Patron should be able to access the application. If wrong credentials are submitted patron should not get access to open application.
+User Name: NESadmin
+Password: NES2021!
+Application is accessed with correct credentials
+Navigated to Home page
+Test Result: Pass
+Browser is closed
+Browser Opened the Application
+Test Case ID: TS_LP_01
+Test Designed By: Charan
+Test Priority: High
+Test Executed By: cchitneedi
+Test Executed Date: 2022-03-11 12:24:30
+Test Description: Open application in browser. Then give right patron credentials and click on Login button. Patron should be able to access the application. If wrong credentials are submitted patron should not get access to open application.
+User Name: NESAdmin
+Password: NESNES
+You have entered an invalid username or password. Please try again.
+Test Result: Pass
+Browser is closed
+Browser is opened
+Test functionality for creating a Callout
+User Name: NESadmin
+Password: NES2021!
+Application is accessed with correct credentials
+Navigated to Home page
+Module Name: Callouts
+Test Case ID: TS_CO_01
+Test Designed By: Charan
+Test Priority: High
+Test Executed By: cchitneedi
+Test Executed Date: 2022-03-11 12:25:04
+Test Description: Navigate to Callouts Page in Callouts Tile. Click on [Add callout] button to create a new callout. Page navigates to 'Create Callouts' page. Fill the details and click on [Save] button. New callout is created with respective Title name and can be viewed in Callouts table grid.
+Title Name from Excel: Excel Callouts-1
+clicked on SAVE button after providing details
+Condition in Test Scenario Id: TS_CO_01 is Executed Successfully
+Test Result: Pass
+Browser is closed
+Browser is opened
+Callout Edit Functionality
+User Name: NESadmin
+Password: NES2021!
+Application is accessed with correct credentials
+Navigated to Home page
+Module Name: Callouts
+Test Case ID: TS_CO_05
+Test Designed By: Charan
+Test Priority: High
+Test Executed By: cchitneedi
+Test Executed Date: 2022-03-11 12:25:27
+Test Description: Navigate to Callouts Page in Callouts Tile. Search one callout in search bar. If the following callout is present in Callout table grid, then edit the following callout and save. If Callout is not present in table grid, user will be informed no such callout is present in this Callout table grid Note: Callout value is taken from Excel sheet : inputcallouttitle
+Verizon Research NEW TITLE IS EDITED AS: Cred Resarch-M
+clicked on SAVE button after Editing details
+'Verizon Research' is Updated as: 'Cred Resarch-M'
+Test Result: Pass
+Browser is closed
+Browser is opened
+Test functionality to delete callout
+User Name: NESadmin
+Password: NES2021!
+Application is accessed with correct credentials
+Navigated to Home page
+Test Case ID: TS_CO_02
+Test Designed By: Charan
+Test Priority: High
+Module Name: Callouts
+Test Executed By: cchitneedi
+Test Executed Date: 2022-03-11 12:25:52
+Test Description: Log in to EBSCO Enterprise Research application to create a callout first. Then identify the created ones in callout table and delete the following callout
+Callout created
+'pubmed'callout is created first
+'pubmed' is deleted successfully
+Test Result: Pass
+Browser is closed
+Browser is opened
+Test functionality for creating a Resource Flow
+User Name: NESadmin
+Password: NES2021!
+Application is accessed with correct credentials
+Navigated to Home page
+Module Name: Resource Flows
+Test Case ID: TS_RF_01
+Test Designed By: Charan
+Test Priority: High
+Test Executed By: cchitneedi
+Test Executed Date: 2022-03-11 12:26:24
+Test Description: Navigate to Resource Flow Page in Resource Flow Tile. Click on [Add New] button to create a new Resource Flow. Page navigates to Create Resource Flow page. Fill the details and click on [Save] button. New Resource Flow is created with respective Title name and and be viewed in Resource Flow table 
+Title Name from Excel: Resource Title-31
+UPC value from Excel: 3.60029145E8
+subTitle value from Excel: Resource SubTitle-31
+author value from Excel: Nilesh
+clicked on SAVE button after providing details
+Successfully created a Resource Flow with title name: Resource Title-31
+Test Scenario Id: TS_RF_01 is Executed Successfully
+Test Result: Pass
+Browser is closed
+Browser opened
+Resource Flow Edit Functionality
+User Name: NESadmin
+Password: NES2021!
+Application is accessed with correct credentials
+Navigated to Home page
+Module Name: Resource Flows
+Test Case ID: TS_RF_05
+Test Designed By: Charan
+Test Priority: High
+Test Executed By: cchitneedi
+Test Executed Date: 2022-03-11 12:26:50
+Test Description: Navigate to resource Flows Page in Resource Flows Tile. Search one Resource Flow Title in search bar. If the following title is present in Resource Flows table grid, then edit the following Resource Flow and save. If Resource Flow is not present in table grid, user will be informed no such Resource Flow Title is present in this Resource Flows table grid Note: Resource Flow Title value is taken from Excel sheet : inputresourceflowtitle
+Verizon Research NEW TITLE IS EDITED AS: Cred Resources
+clicked on SAVE button after Editing details
+Verizon Research is updated as: Cred Resources
+Test Result: Pass
+Browser is closed
+Browser is opened
+Test functionality to delete a Resource Flow
+User Name: NESadmin
+Password: NES2021!
+Application is accessed with correct credentials
+Navigated to Home page
+Test Case ID: TS_RF_02
+Test Designed By: Charan
+Test Priority: High
+Module Name: Resource Flows
+Test Executed By: cchitneedi
+Test Executed Date: 2022-03-11 12:27:15
+Test Description: Log in to Ebsco Enterprise Research application to create a Resource Flow first. Then identify the created ones in Resource Flow table and delete the following Resource Flow
+Resource Flow is created
+'Verizon Resource' Resource Flow is created first
+'Verizon Resource' is deleted successfully
+Test Result: Pass
+Browser is closed
+Browser is opened
+Test functionality for creating News Article Page
+User Name: NESadmin
+Password: NES2021!
+Application is accessed with correct credentials
+Navigated to Home page
+Module Name: News Articles
+Test Case ID: TS_NA_01
+Test Designed By: Charan
+Test Priority: High
+Test Executed By: cchitneedi
+Test Executed Date: 2022-03-11 12:27:49
+Test Description: Navigate to News Articles Page in News Articles Tile. Click on [Add New] button to create a new News Article. Page navigates to Create News Article page. Fill the details and click on [Save] button. New 'News Article' is created with respective Title name and can be viewed in News Articles table grid.
+clicked on SAVE button after providing details
+Condition in Test Scenario Id: TS_NA_01 is Executed Successfully
+Test Result: Pass
+Browser is closed
+Browser opened
+News Article Edit Functionality
+User Name: NESadmin
+Password: NES2021!
+Application is accessed with correct credentials
+Navigated to Home page
+Module Name: News Article
+Test Case ID: TS_NA_05
+Test Designed By: Charan
+Test Priority: High
+Test Executed By: cchitneedi
+Test Executed Date: 2022-03-11 12:28:13
+Test Description: Navigate to News Articles Page in News Articles Tile. Search one Article in search bar. If the following Article is present in News Articles table grid, then edit the following Article and save. If Article is not present in table grid, user will be informed no such News Article is present in this News Article table grid Note: Article Title value is taken from Excel sheet : inputnews
+clicked on SAVE button after Editing details
+Verizon Research is updated as: Cred Resources
+Test Result: Pass
+Browser is closed
+Browser is opened
+Test functionality to delete a News Article
+User Name: NESadmin
+Password: NES2021!
+Application is accessed with correct credentials
+Navigated to Home page
+Test Case ID: TS_NA_02
+Test Designed By: Charan
+Test Priority: High
+Module Name: News Article
+Test Executed By: cchitneedi
+Test Executed Date: 2022-03-11 12:28:37
+Test Description: Log in to EBSCO Enterprise Research application to create a News Article first. Then identify the created ones in News Articles table and delete the following News Article
+News Article created
+'Medline News Article' is created first
+'Medline News Article' is deleted successfully
+Test Result: Pass
+Browser is closed
+Browser is opened
+Test Functionality for creating Database Listings
+User Name: NESadmin
+Password: NES2021!
+Application is accessed with correct credentials
+Navigated to Home page
+Module Name: Database Listings
+Test Case ID: TS_DBL_01
+Test Designed By: Charan
+Test Priority: High
+Test Executed By: cchitneedi
+Test Executed Date: 2022-03-11 12:29:09
+Test Description: Navigate to Database Listings Page in Database Listings Tile. Click on [Add New] button to create a new Database List. Page navigates to 'Create Database Listing' page. Fill the details and click on [Save] button. New Database List is created with respective Title name and can be viewed in Database Listings table grid.
+clicked on SAVE button after providing details
+Databaselist is saved with title name: MedLine Listing
+Condition in Test Scenario Id: TS_DBL_01 is Executed Successfully
+Test Result: Pass
+Browser is closed
+Browser opened
+Database Listings Edit Functionality
+User Name: NESadmin
+Password: NES2021!
+Application is accessed with correct credentials
+Navigated to Home page
+Module Name: Database Listings
+Test Case ID: TS_DBL_05
+Test Designed By: Charan
+Test Priority: High
+Test Executed By: cchitneedi
+Test Executed Date: 2022-03-11 12:29:35
+Test Description: Navigate to 'Database Listings' Page in Database Listings Tile. Search one Database List in search bar. If the following Database List is present in Database Listings table grid, then edit the following Database List and save. If Database List is not present in table grid, user will be informed no such Database List is present in this Database Listings table grid. Note: Database List title value is taken from Excel sheet : inputdbl
+clicked on SAVE button after Editing details
+'Verizon' is updated as: 'Cred DBL-E'
+Test Result: Pass
+Browser is closed
+Browser is opened
+Test functionality to delete a Database List
+User Name: NESadmin
+Password: NES2021!
+Application is accessed with correct credentials
+Navigated to Home page
+Test Case ID: TS_DBL_02
+Test Designed By: Charan
+Test Priority: High
+Module Name: Database Listing
+Test Executed By: cchitneedi
+Test Executed Date: 2022-03-11 12:30:00
+Test Description: Log in to EBSCO Enterprise Research application to create a Database Listing first. Then identify the created ones in Database List table and delete the following Database List
+Database List created
+'Pubmed DBL' Database List is created first
+'Pubmed DBL' is deleted successfully
+Test Result: Pass
+Browser is closed
+Browser is opened
+Test functionality for creating a Directory Listing
+User Name: NESadmin
+Password: NES2021!
+Application is accessed with correct credentials
+Navigated to Home page
+Module Name: Directory Listings
+Test Case ID: TS_DL_01
+Test Designed By: Charan
+Test Priority: High
+Test Executed By: cchitneedi
+Test Executed Date: 2022-03-11 12:30:49
+Test Description: Navigate to 'Directory Listings' Page in Directory Listings Tile. Click on [Add New] button to create a new Directory. Page navigates to 'Create Directory Listing' page. Fill the details and click on [Save] button. New Directory is created with respective Title name and can be viewed in Directory Listings table grid.
+clicked on SAVE button after providing details
+Directory List saved with Title name: Directory
+Condition in Test Scenario Id: TS_DL_01 is Executed Successfully
+Test Result: Pass
+Browser is closed
+Browser opened
+Directory List Edit Functionality
+User Name: NESadmin
+Password: NES2021!
+Application is accessed with correct credentials
+Navigated to Home page
+Module Name: Directory Listings
+Test Case ID: TS_DL_05
+Test Designed By: Charan
+Test Priority: High
+Test Executed By: cchitneedi
+Test Executed Date: 2022-03-11 12:31:12
+Test Description: Navigate to 'Directory Listings' Page in Directory Listings Tile. Search one Directory with either first name or secondary name in search bar. If the following Directory is present in Directory Listings table grid, then edit the following Directory and save. If Directory is not present in table grid, user will be informed no such Directory is present in this Directory Listings table grid Note: Directory first name value is taken from Excel sheet : inputdirectory
+clicked on SAVE button after Editing details
+Verizon Directory is updated as: Cinahal  DL-E
+Test Result: Pass
+Browser is closed
+Browser is opened
+Test functionality to delete a Directory List
+User Name: NESadmin
+Password: NES2021!
+Application is accessed with correct credentials
+Navigated to Home page
+Test Case ID: TS_DL_02
+Test Designed By: Charan
+Test Priority: High
+Module Name: Directory Listings
+Test Executed By: cchitneedi
+Test Executed Date: 2022-03-11 12:31:35
+Test Description: Log in to EBSCO Enterprise Research application to create a Directory List first. Then identify the created ones in Directory Listings table and delete the following Directory
+Directory List is created
+Pubmed Directory is created first
+Pubmed Directory is deleted successfully
+Test Result: Pass
+Browser is closed
+Browser is opened
+Test functionality for creating a Custom Block
+User Name: NESadmin
+Password: NES2021!
+Application is accessed with correct credentials
+Navigated to Home page
+Module Name: Custom Block
+Test Case ID: TS_CB_01
+Test Designed By: Charan
+Test Priority: High
+Test Executed By: cchitneedi
+Test Executed Date: 2022-03-11 12:32:07
+Test Description: Navigate to Custom Block Page in Custom Block Tile. Click on [Add New] button to create a new Custom. Page navigates to 'Create Custom Block' page. Fill the details and click on [Save] button. New 'Custom Block' is created with respective Title name and can be viewed in Custom Block table grid.
+clicked on SAVE button after providing details
+Successfully created a Custom Block with title name: Enterprise Custom
+Condition in Test Scenario Id: TS_CB_01 is Executed Successfully
+Test Result: Pass
+Browser is closed
+Browser opened
+Custom Block Edit Functionality
+User Name: NESadmin
+Password: NES2021!
+Application is accessed with correct credentials
+Navigated to Home page
+Module Name: Custom Block
+Test Case ID: TS_CB_05
+Test Designed By: Charan
+Test Priority: High
+Test Executed By: cchitneedi
+Test Executed Date: 2022-03-11 12:32:30
+Test Description: Navigate to Custom Blocks Page in Custom Blocks Tile. Search one Custom Block in search bar. If the following Custom Block is present in Custom Blocks table grid, then edit the following Custom Block and save. If Custom Block is not present in table grid, user will be informed no such Custom Block is present in this Custom Blocks table grid Note: Custom title value is taken from Excel sheet : inputcustom
+clicked on SAVE button after Editing details
+Verizon Custom is updated as: Cred Custom-E
+Test Result: Pass
+Browser is closed
+Browser is opened
+Test functionality to delete a Custom block
+User Name: NESadmin
+Password: NES2021!
+Application is accessed with correct credentials
+Navigated to Home page
+Test Case ID: TS_CB_02
+Test Designed By: Charan
+Test Priority: High
+Module Name: Custom Block
+Test Executed By: cchitneedi
+Test Executed Date: 2022-03-11 12:32:53
+Test Description: Log in to EBSCO Enterprise Research application to create a Custom Block first. Then identify the created ones in Custom table and delete the following Custom Block
+Custom Block is created
+'Cinahal Custom' Custom Block is created first
+'Cinahal Custom' is deleted successfully
+Test Result: Pass
+Browser is closed
+Browser is opened
+Test functionality for creating a Page
+User Name: NESadmin
+Password: NES2021!
+Application is accessed with correct credentials
+Navigated to Home page
+Module Name: Pages
+Test Case ID: TS_PG_01
+Test Designed By: Charan
+Test Priority: High
+Test Executed By: cchitneedi
+Test Executed Date: 2022-03-11 12:33:26
+Test Description: To create Page, click on Pages Tile in dashboard. Click on [Add New] button to navigate to 'Create Page'. Fill details and click on [SAVE] button. New Page is created
+method before add new
+clicked on SAVE button after providing details
+Page created with title name: Cinahal description Page
+Test Scenario Id: TS_PG_01 is Executed Successfully
+Test Result: Pass
+Browser is closed
+Browser opened
+Pages Edit Functionality
+User Name: NESadmin
+Password: NES2021!
+Application is accessed with correct credentials
+Navigated to Home page
+Module Name: Pages
+Test Case ID: TS_PG_05
+Test Designed By: Charan
+Test Priority: High
+Test Executed By: cchitneedi
+Test Executed Date: 2022-03-11 12:33:50
+Test Description: Navigate to 'Pages' page in Pages Tile. Search one Page title in search bar. If the following Page title is present in table grid , then edit the following Page title and save. If Page title is not present in table grid, user will be informed no such Page Title is present in this Pages table grid Note: Page Title value is taken from Excel sheet : inputpage
+clicked on SAVE button after Editing details
+Corpus Limited is updated as: Cinahal-E
+Test Result: Pass
+Browser is closed
+Browser opened
+Test functionality for deleting a Page
+User Name: NESadmin
+Password: NES2021!
+Application is accessed with correct credentials
+Navigated to Home page
+Test Case ID: TS_PG_02
+Test Designed By: Charan
+Test Priority: High
+Module Name: Pages
+Test Executed By: cchitneedi
+Test Executed Date: 2022-03-11 12:34:11
+Test Description: Log in to EBSCO Enterprise Research application to create a new Page first. Then identify the created ones in  Pages table and delete the following Page
+Page is created
+'PubMed Page' is created first
+'PubMed Page' is deleted successfully
+Test Result: Pass
+Browser is closed
+Browser is opened
+Test Functionality for creating Research Guide
+User Name: NESadmin
+Password: NES2021!
+Application is accessed with correct credentials
+Navigated to Home page
+Module Name: Research Guides
+Test Case ID: TS_RG_01
+Test Designed By: Charan
+Test Priority: High
+Test Executed By: cchitneedi
+Test Executed Date: 2022-03-11 12:34:40
+Test Description: Navigate to 'Research Guides Page' in Research Guides Tile. Click on [+Add Research guide] button to create a new Research Guide. Page navigates to 'Create Research Guide' page. Fill the details and click on [Save] button. New Research Guide is created with respective Title name and can be viewed in Research Guides table grid.
+Research Guide is created
+Successfully created a Resource Flow with title name: DynaMed Plus RG
+Condition in Test Scenario Id: TS_RG_01 is Executed Successfully
+Test Result: Pass
+Browser is closed
+Browser opened
+Research Guide Edit Functionality
+User Name: NESadmin
+Password: NES2021!
+Application is accessed with correct credentials
+Navigated to Home page
+Module Name: Research Guides
+Test Case ID: TS_RG_05
+Test Designed By: Charan
+Test Priority: High
+Test Executed By: cchitneedi
+Test Executed Date: 2022-03-11 12:35:18
+Test Description: Navigate to 'Research Guides' Page in Research Guides Tile. Search one Research Guide title in search bar. If the following Research Guide is present in Research Guides table grid, then edit the following Research Guide and save. If Research Guide is not present in table grid, user will be informed no such Research Guide is present in this Research Guides table grid Note: Research Guide title value is taken from Excel sheet : inputresearch
+clicked on SAVE button after Editing details
+Corpus Limited is updated as: Cinahal-E
+Test Result: Pass
+Browser is closed
+Browser is opened
+Test functionality to delete Research Guide
+User Name: NESadmin
+Password: NES2021!
+Application is accessed with correct credentials
+Navigated to Home page
+Test Case ID: TS_RG_02
+Test Designed By: Charan
+Test Priority: High
+Module Name: Research Guide
+Test Executed By: cchitneedi
+Test Executed Date: 2022-03-11 12:35:41
+Test Description: Log in to EBSCO Enterprise Research application to create a Research Guide first. Then identify the created ones in Research Guide table and delete the following Research Guide by search the title from search bar
+Research Guide is created
+'PubMed Research' Research Guide is created first
+'PubMed Research' is deleted successfully
+Test Result: Pass
+Browser is closed

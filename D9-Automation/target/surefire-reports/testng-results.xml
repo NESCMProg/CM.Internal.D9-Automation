@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="26" passed="26" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-03-11T12:24:20 IST" name="Suite1" finished-at="2022-03-11T12:36:16 IST" duration-ms="716170">
+    <groups>
+    </groups>
+    <test started-at="2022-03-11T12:24:20 IST" name="Test" finished-at="2022-03-11T12:36:16 IST" duration-ms="716170">
+      <class name="teseCases.LoginPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:teseCases.LoginPageTest@5ef60048]" started-at="2022-03-11T12:24:21 IST" name="setUp" finished-at="2022-03-11T12:24:25 IST" duration-ms="4459" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:1, instance:teseCases.LoginPageTest@5ef60048]" started-at="2022-03-11T12:24:25 IST" name="loginTest" data-provider="getLoginData" finished-at="2022-03-11T12:24:30 IST" duration-ms="4306" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NESadmin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NES2021!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:teseCases.LoginPageTest@5ef60048]" started-at="2022-03-11T12:24:30 IST" name="teardown" finished-at="2022-03-11T12:24:30 IST" duration-ms="172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:teseCases.LoginPageTest@5ef60048]" started-at="2022-03-11T12:24:30 IST" name="setUp" finished-at="2022-03-11T12:24:33 IST" duration-ms="3723" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:1, instance:teseCases.LoginPageTest@5ef60048]" started-at="2022-03-11T12:24:33 IST" name="loginTest" data-provider="getLoginData" finished-at="2022-03-11T12:25:04 IST" duration-ms="30368" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NESAdmin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NESNES]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:teseCases.LoginPageTest@5ef60048]" started-at="2022-03-11T12:25:04 IST" name="teardown" finished-at="2022-03-11T12:25:04 IST" duration-ms="177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- teseCases.LoginPageTest -->
+      <class name="teseCases.EditCustomBlockTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:teseCases.EditCustomBlockTest@78b729e6]" started-at="2022-03-11T12:32:29 IST" name="setUp" finished-at="2022-03-11T12:32:43 IST" duration-ms="13960" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="provideCustomBLockTitle(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:teseCases.EditCustomBlockTest@78b729e6]" started-at="2022-03-11T12:32:43 IST" name="provideCustomBLockTitle" data-provider="InputCustomBlockData" finished-at="2022-03-11T12:32:52 IST" duration-ms="9041" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Verizon Custom]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Cred Custom-E]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Cred Custom-E Log]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- provideCustomBLockTitle -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:teseCases.EditCustomBlockTest@78b729e6]" started-at="2022-03-11T12:32:52 IST" name="teardown" finished-at="2022-03-11T12:32:53 IST" duration-ms="182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- teseCases.EditCustomBlockTest -->
+      <class name="teseCases.CreateCalloutTestPage">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:teseCases.CreateCalloutTestPage@1460a8c0]" started-at="2022-03-11T12:25:04 IST" name="setUp" finished-at="2022-03-11T12:25:18 IST" duration-ms="14177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="newcalloutcreatetest(java.lang.String)[pri:0, instance:teseCases.CreateCalloutTestPage@1460a8c0]" started-at="2022-03-11T12:25:18 IST" name="newcalloutcreatetest" data-provider="getCalloutData" finished-at="2022-03-11T12:25:26 IST" duration-ms="8242" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Excel Callouts-1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newcalloutcreatetest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:teseCases.CreateCalloutTestPage@1460a8c0]" started-at="2022-03-11T12:25:26 IST" name="teardown" finished-at="2022-03-11T12:25:27 IST" duration-ms="230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- teseCases.CreateCalloutTestPage -->
+      <class name="teseCases.CreateNewsArticlesTestPage">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:teseCases.CreateNewsArticlesTestPage@7ff95560]" started-at="2022-03-11T12:27:49 IST" name="setUp" finished-at="2022-03-11T12:28:03 IST" duration-ms="14284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="newArticleCreateTest(java.lang.String,java.lang.String)[pri:0, instance:teseCases.CreateNewsArticlesTestPage@7ff95560]" started-at="2022-03-11T12:28:03 IST" name="newArticleCreateTest" data-provider="getNewsArticlesData" finished-at="2022-03-11T12:28:12 IST" duration-ms="9217" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DynaMed News Article]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Jonny]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newArticleCreateTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:teseCases.CreateNewsArticlesTestPage@7ff95560]" started-at="2022-03-11T12:28:12 IST" name="teardown" finished-at="2022-03-11T12:28:13 IST" duration-ms="212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- teseCases.CreateNewsArticlesTestPage -->
+      <class name="teseCases.EditCalloutsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:teseCases.EditCalloutsTest@4f638935]" started-at="2022-03-11T12:25:27 IST" name="setUp" finished-at="2022-03-11T12:25:43 IST" duration-ms="15879" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="provideCalloutTitle(java.lang.String,java.lang.String)[pri:1, instance:teseCases.EditCalloutsTest@4f638935]" started-at="2022-03-11T12:25:43 IST" name="provideCalloutTitle" data-provider="InputCalloutData" finished-at="2022-03-11T12:25:52 IST" duration-ms="9039" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Verizon Research]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Cred Resarch-M]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- provideCalloutTitle -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:teseCases.EditCalloutsTest@4f638935]" started-at="2022-03-11T12:25:52 IST" name="teardown" finished-at="2022-03-11T12:25:52 IST" duration-ms="198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- teseCases.EditCalloutsTest -->
+      <class name="teseCases.DeleteNewsArticleTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:teseCases.DeleteNewsArticleTest@2aa3cd93]" started-at="2022-03-11T12:28:37 IST" name="setUp" finished-at="2022-03-11T12:28:50 IST" duration-ms="13260" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="deleteTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:teseCases.DeleteNewsArticleTest@2aa3cd93]" started-at="2022-03-11T12:28:50 IST" name="deleteTest" data-provider="getdeleteData" finished-at="2022-03-11T12:29:09 IST" duration-ms="18820" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Medline News Article]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Miraj]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Medline News Article]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:teseCases.DeleteNewsArticleTest@2aa3cd93]" started-at="2022-03-11T12:29:09 IST" name="teardown" finished-at="2022-03-11T12:29:09 IST" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- teseCases.DeleteNewsArticleTest -->
+      <class name="teseCases.DeleteResearchGuideTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:teseCases.DeleteResearchGuideTest@22635ba0]" started-at="2022-03-11T12:35:41 IST" name="setUp" finished-at="2022-03-11T12:35:53 IST" duration-ms="12313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="deleteResearchGuideTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:teseCases.DeleteResearchGuideTest@22635ba0]" started-at="2022-03-11T12:35:53 IST" name="deleteResearchGuideTest" data-provider="getdeleteRGData" finished-at="2022-03-11T12:36:16 IST" duration-ms="23171" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[PubMed Research]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[DemoType]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[PubMed Research Title]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[https://www.google.co.in/]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[PubMed Research]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteResearchGuideTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:teseCases.DeleteResearchGuideTest@22635ba0]" started-at="2022-03-11T12:36:16 IST" name="teardown" finished-at="2022-03-11T12:36:16 IST" duration-ms="193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- teseCases.DeleteResearchGuideTest -->
+      <class name="teseCases.EditResourceFlowsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:teseCases.EditResourceFlowsTest@7fc229ab]" started-at="2022-03-11T12:26:50 IST" name="setUp" finished-at="2022-03-11T12:27:03 IST" duration-ms="13340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="provideResourceTitle(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:teseCases.EditResourceFlowsTest@7fc229ab]" started-at="2022-03-11T12:27:03 IST" name="provideResourceTitle" data-provider="InputResourceFlowData" finished-at="2022-03-11T12:27:15 IST" duration-ms="12220" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Verizon Research]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Cred Resources]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3.60029147E8]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Cred Resources pvt ltd]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[James]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- provideResourceTitle -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:teseCases.EditResourceFlowsTest@7fc229ab]" started-at="2022-03-11T12:27:15 IST" name="teardown" finished-at="2022-03-11T12:27:15 IST" duration-ms="198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- teseCases.EditResourceFlowsTest -->
+      <class name="teseCases.CreateResourceFlowTestPage">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:teseCases.CreateResourceFlowTestPage@6e75aa0d]" started-at="2022-03-11T12:26:24 IST" name="setUp" finished-at="2022-03-11T12:26:38 IST" duration-ms="14149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="newResourceFlowTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:teseCases.CreateResourceFlowTestPage@6e75aa0d]" started-at="2022-03-11T12:26:38 IST" name="newResourceFlowTest" data-provider="getResourceFlowsData" finished-at="2022-03-11T12:26:48 IST" duration-ms="10305" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Resource Title-31]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3.60029145E8]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Resource SubTitle-31]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Nilesh]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newResourceFlowTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:teseCases.CreateResourceFlowTestPage@6e75aa0d]" started-at="2022-03-11T12:26:48 IST" name="teardown" finished-at="2022-03-11T12:26:49 IST" duration-ms="1159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- teseCases.CreateResourceFlowTestPage -->
+      <class name="teseCases.DeletePagesTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:teseCases.DeletePagesTest@402e37bc]" started-at="2022-03-11T12:34:11 IST" name="setUp" finished-at="2022-03-11T12:34:24 IST" duration-ms="13266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="deletePageTest(java.lang.String,java.lang.String)[pri:0, instance:teseCases.DeletePagesTest@402e37bc]" started-at="2022-03-11T12:34:24 IST" name="deletePageTest" data-provider="getdeletePageData" finished-at="2022-03-11T12:34:39 IST" duration-ms="15385" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[PubMed Page]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PubMed Page]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletePageTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:teseCases.DeletePagesTest@402e37bc]" started-at="2022-03-11T12:34:39 IST" name="teardown" finished-at="2022-03-11T12:34:40 IST" duration-ms="203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- teseCases.DeletePagesTest -->
+      <class name="teseCases.createDirectoryListingsTestPage">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:teseCases.createDirectoryListingsTestPage@1d76aeea]" started-at="2022-03-11T12:30:49 IST" name="setUp" finished-at="2022-03-11T12:31:03 IST" duration-ms="14572" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="newdirectorycreatetest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:teseCases.createDirectoryListingsTestPage@1d76aeea]" started-at="2022-03-11T12:31:03 IST" name="newdirectorycreatetest" data-provider="getDirectoryListData" finished-at="2022-03-11T12:31:12 IST" duration-ms="8606" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Directory]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Listing1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Project developer]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Texas]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://www.linkedin.com/]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Linkedin Text]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newdirectorycreatetest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:teseCases.createDirectoryListingsTestPage@1d76aeea]" started-at="2022-03-11T12:31:12 IST" name="teardown" finished-at="2022-03-11T12:31:12 IST" duration-ms="169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- teseCases.createDirectoryListingsTestPage -->
+      <class name="teseCases.CreatePagesTestPage">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:teseCases.CreatePagesTestPage@27c86f2d]" started-at="2022-03-11T12:33:26 IST" name="setUp" finished-at="2022-03-11T12:33:41 IST" duration-ms="15093" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="newPageCreateTest(java.lang.String)[pri:0, instance:teseCases.CreatePagesTestPage@27c86f2d]" started-at="2022-03-11T12:33:41 IST" name="newPageCreateTest" data-provider="getpagesData" finished-at="2022-03-11T12:33:50 IST" duration-ms="9034" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Cinahal description Page]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newPageCreateTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:teseCases.CreatePagesTestPage@27c86f2d]" started-at="2022-03-11T12:33:50 IST" name="teardown" finished-at="2022-03-11T12:33:50 IST" duration-ms="164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- teseCases.CreatePagesTestPage -->
+      <class name="teseCases.EditPagesTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:teseCases.EditPagesTest@197d671]" started-at="2022-03-11T12:33:50 IST" name="setUp" finished-at="2022-03-11T12:34:03 IST" duration-ms="13088" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="providePageTitle(java.lang.String,java.lang.String)[pri:1, instance:teseCases.EditPagesTest@197d671]" started-at="2022-03-11T12:34:03 IST" name="providePageTitle" data-provider="InputPageData" finished-at="2022-03-11T12:34:11 IST" duration-ms="7598" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Corpus Limited]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Cinahal-E]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- providePageTitle -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:teseCases.EditPagesTest@197d671]" started-at="2022-03-11T12:34:11 IST" name="teardown" finished-at="2022-03-11T12:34:11 IST" duration-ms="183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- teseCases.EditPagesTest -->
+      <class name="teseCases.DeleteResourceFlowTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:teseCases.DeleteResourceFlowTest@2cbb3d47]" started-at="2022-03-11T12:27:15 IST" name="setUp" finished-at="2022-03-11T12:27:29 IST" duration-ms="13621" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="deleteTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:teseCases.DeleteResourceFlowTest@2cbb3d47]" started-at="2022-03-11T12:27:29 IST" name="deleteTest" data-provider="getdeleteResourceData" finished-at="2022-03-11T12:27:49 IST" duration-ms="19697" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Verizon Resource]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3.60029145E8]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Verizon Resource pvt. Ltd]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Sharon]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Verizon Resource]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:teseCases.DeleteResourceFlowTest@2cbb3d47]" started-at="2022-03-11T12:27:49 IST" name="teardown" finished-at="2022-03-11T12:27:49 IST" duration-ms="213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- teseCases.DeleteResourceFlowTest -->
+      <class name="teseCases.EditResearchGuidesTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:teseCases.EditResearchGuidesTest@1df82230]" started-at="2022-03-11T12:35:18 IST" name="setUp" finished-at="2022-03-11T12:35:31 IST" duration-ms="13053" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="provideResearchGuideTitleTitle(java.lang.String,java.lang.String)[pri:1, instance:teseCases.EditResearchGuidesTest@1df82230]" started-at="2022-03-11T12:35:31 IST" name="provideResearchGuideTitleTitle" data-provider="InputResearchGuideData" finished-at="2022-03-11T12:35:41 IST" duration-ms="9298" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Corpus Limited]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Cinahal-E]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- provideResearchGuideTitleTitle -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:teseCases.EditResearchGuidesTest@1df82230]" started-at="2022-03-11T12:35:41 IST" name="teardown" finished-at="2022-03-11T12:35:41 IST" duration-ms="172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- teseCases.EditResearchGuidesTest -->
+      <class name="teseCases.EditDirectoryListingsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:teseCases.EditDirectoryListingsTest@78dd667e]" started-at="2022-03-11T12:31:12 IST" name="setUp" finished-at="2022-03-11T12:31:26 IST" duration-ms="13575" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="provideDirectoryListTitle(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:teseCases.EditDirectoryListingsTest@78dd667e]" started-at="2022-03-11T12:31:26 IST" name="provideDirectoryListTitle" data-provider="InputDirectoryListingsData" finished-at="2022-03-11T12:31:35 IST" duration-ms="9594" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Verizon]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Directory]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Cinahal ]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[DL-E]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Production Manager]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[New York]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.stacksdiscovery.com/]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Twitter-E]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- provideDirectoryListTitle -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:teseCases.EditDirectoryListingsTest@78dd667e]" started-at="2022-03-11T12:31:35 IST" name="teardown" finished-at="2022-03-11T12:31:35 IST" duration-ms="172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- teseCases.EditDirectoryListingsTest -->
+      <class name="teseCases.DeleteDatabaseListingTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:teseCases.DeleteDatabaseListingTest@290d210d]" started-at="2022-03-11T12:30:00 IST" name="setUp" finished-at="2022-03-11T12:30:25 IST" duration-ms="24649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="deleteTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:teseCases.DeleteDatabaseListingTest@290d210d]" started-at="2022-03-11T12:30:25 IST" name="deleteTest" data-provider="getdeleteDBLData" finished-at="2022-03-11T12:30:48 IST" duration-ms="23421" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pubmed DBL]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.google.co.in/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[https://www.google.co.in/]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Pubmed Link Text]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Pubmed DBL]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:teseCases.DeleteDatabaseListingTest@290d210d]" started-at="2022-03-11T12:30:48 IST" name="teardown" finished-at="2022-03-11T12:30:49 IST" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- teseCases.DeleteDatabaseListingTest -->
+      <class name="teseCases.EditDatabaseListingTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:teseCases.EditDatabaseListingTest@4b44655e]" started-at="2022-03-11T12:29:35 IST" name="setUp" finished-at="2022-03-11T12:29:49 IST" duration-ms="13978" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="provideDatabaseListTitle(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:teseCases.EditDatabaseListingTest@4b44655e]" started-at="2022-03-11T12:29:49 IST" name="provideDatabaseListTitle" data-provider="InputDatabaseListData" finished-at="2022-03-11T12:30:00 IST" duration-ms="11449" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Verizon]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Cred DBL-E]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[https://www.stacksdiscovery.com/]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[https://www.google.co.in/]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Cred DBL-E]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- provideDatabaseListTitle -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:teseCases.EditDatabaseListingTest@4b44655e]" started-at="2022-03-11T12:30:00 IST" name="teardown" finished-at="2022-03-11T12:30:00 IST" duration-ms="169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- teseCases.EditDatabaseListingTest -->
+      <class name="teseCases.CreateCustomBlockTestPage">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:teseCases.CreateCustomBlockTestPage@501edcf1]" started-at="2022-03-11T12:32:07 IST" name="setUp" finished-at="2022-03-11T12:32:22 IST" duration-ms="14413" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="newCustomCreateTest(java.lang.String,java.lang.String)[pri:0, instance:teseCases.CreateCustomBlockTestPage@501edcf1]" started-at="2022-03-11T12:32:22 IST" name="newCustomCreateTest" data-provider="getCustomBlockData" finished-at="2022-03-11T12:32:29 IST" duration-ms="7614" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Enterprise Custom]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Revision Log Enterprise Custom]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newCustomCreateTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:teseCases.CreateCustomBlockTestPage@501edcf1]" started-at="2022-03-11T12:32:29 IST" name="teardown" finished-at="2022-03-11T12:32:29 IST" duration-ms="213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- teseCases.CreateCustomBlockTestPage -->
+      <class name="teseCases.CreateDataBaseListingsTestPage">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:teseCases.CreateDataBaseListingsTestPage@7ea37dbf]" started-at="2022-03-11T12:29:09 IST" name="setUp" finished-at="2022-03-11T12:29:25 IST" duration-ms="16285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="newDBLCreateTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:teseCases.CreateDataBaseListingsTestPage@7ea37dbf]" started-at="2022-03-11T12:29:25 IST" name="newDBLCreateTest" data-provider="getDBListingsData" finished-at="2022-03-11T12:29:34 IST" duration-ms="9281" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MedLine Listing]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.google.co.in/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[https://www.stacksdiscovery.com/]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Stacks Discovery]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newDBLCreateTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:teseCases.CreateDataBaseListingsTestPage@7ea37dbf]" started-at="2022-03-11T12:29:34 IST" name="teardown" finished-at="2022-03-11T12:29:35 IST" duration-ms="196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- teseCases.CreateDataBaseListingsTestPage -->
+      <class name="teseCases.DeleteCalloutTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:teseCases.DeleteCalloutTest@4387b79e]" started-at="2022-03-11T12:25:52 IST" name="setUp" finished-at="2022-03-11T12:26:06 IST" duration-ms="13903" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="deleteTest(java.lang.String,java.lang.String)[pri:0, instance:teseCases.DeleteCalloutTest@4387b79e]" started-at="2022-03-11T12:26:06 IST" name="deleteTest" data-provider="getdeleteData" finished-at="2022-03-11T12:26:24 IST" duration-ms="17772" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[pubmed]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pubmed]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:teseCases.DeleteCalloutTest@4387b79e]" started-at="2022-03-11T12:26:24 IST" name="teardown" finished-at="2022-03-11T12:26:24 IST" duration-ms="200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- teseCases.DeleteCalloutTest -->
+      <class name="teseCases.DeleteCustomTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:teseCases.DeleteCustomTest@6b4a4e18]" started-at="2022-03-11T12:32:53 IST" name="setUp" finished-at="2022-03-11T12:33:06 IST" duration-ms="13277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="deleteTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:teseCases.DeleteCustomTest@6b4a4e18]" started-at="2022-03-11T12:33:06 IST" name="deleteTest" data-provider="getdeleteData" finished-at="2022-03-11T12:33:25 IST" duration-ms="19382" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Cinahal Custom]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Cinahal Custom revision log]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Cinahal Custom]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:teseCases.DeleteCustomTest@6b4a4e18]" started-at="2022-03-11T12:33:25 IST" name="teardown" finished-at="2022-03-11T12:33:26 IST" duration-ms="218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- teseCases.DeleteCustomTest -->
+      <class name="teseCases.DeleteDirectoryListingTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:teseCases.DeleteDirectoryListingTest@10db82ae]" started-at="2022-03-11T12:31:35 IST" name="setUp" finished-at="2022-03-11T12:31:49 IST" duration-ms="14147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="deleteTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:teseCases.DeleteDirectoryListingTest@10db82ae]" started-at="2022-03-11T12:31:49 IST" name="deleteTest" data-provider="getdeletedirectorylistData" finished-at="2022-03-11T12:32:07 IST" duration-ms="17598" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pubmed]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Directory]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Manager]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Texas]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://www.google.co.in/]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Linkedin Text]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Pubmed]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Directory]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:teseCases.DeleteDirectoryListingTest@10db82ae]" started-at="2022-03-11T12:32:07 IST" name="teardown" finished-at="2022-03-11T12:32:07 IST" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- teseCases.DeleteDirectoryListingTest -->
+      <class name="teseCases.CreateResearchGuidesTestPage">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:teseCases.CreateResearchGuidesTestPage@79ad8b2f]" started-at="2022-03-11T12:34:40 IST" name="setUp" finished-at="2022-03-11T12:34:56 IST" duration-ms="16349" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="newResearchGuideTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:teseCases.CreateResearchGuidesTestPage@79ad8b2f]" started-at="2022-03-11T12:34:56 IST" name="newResearchGuideTest" data-provider="getResearchGuideData" finished-at="2022-03-11T12:35:18 IST" duration-ms="21996" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DynaMed Plus RG]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[DemoType]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[DynaMed Plus RG tab-1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[https://www.google.co.in/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newResearchGuideTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:teseCases.CreateResearchGuidesTestPage@79ad8b2f]" started-at="2022-03-11T12:35:18 IST" name="teardown" finished-at="2022-03-11T12:35:18 IST" duration-ms="197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- teseCases.CreateResearchGuidesTestPage -->
+      <class name="teseCases.EditNewsArticlesTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:teseCases.EditNewsArticlesTest@add0edd]" started-at="2022-03-11T12:28:13 IST" name="setUp" finished-at="2022-03-11T12:28:26 IST" duration-ms="13250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="provideNewsArticleTitle(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:teseCases.EditNewsArticlesTest@add0edd]" started-at="2022-03-11T12:28:26 IST" name="provideNewsArticleTitle" data-provider="InputNewsArticleData" finished-at="2022-03-11T12:28:36 IST" duration-ms="10539" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Verizon Research]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Cred Resources]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Neliez]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- provideNewsArticleTitle -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:teseCases.EditNewsArticlesTest@add0edd]" started-at="2022-03-11T12:28:36 IST" name="teardown" finished-at="2022-03-11T12:28:37 IST" duration-ms="170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- teseCases.EditNewsArticlesTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite1 -->
+</testng-results>

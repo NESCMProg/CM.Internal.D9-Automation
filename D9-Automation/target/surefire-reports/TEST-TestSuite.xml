@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="716.854" tests="26" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="17.0.2+8-LTS-86"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.2\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\cchitneedi\eclipse-2\D9-Automation"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\cchitneedi\eclipse-2\D9-Automation"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="17.0.2+8-LTS-86"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\CCHITN~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Users\cchitneedi\Downloads\apache-maven-3.8.4\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17.0.2\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\ssteam\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Adaptiva\AdaptivaClient\bin\x32;C:\Program Files (x86)\Adaptiva\AdaptivaClient\bin\x64;C:\Users\cchitneedi\Downloads\apache-maven-3.8.4\bin;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-17.0.2\bin;C:\Users\cchitneedi\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="maven.conf" value="C:\Users\cchitneedi\Downloads\apache-maven-3.8.4/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="61.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\Users\cchitneedi\Downloads\apache-maven-3.8.4\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\cchitneedi"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.specification.version" value="17"/>
+    <property name="user.name" value="cchitneedi"/>
+    <property name="java.class.path" value="C:\Users\cchitneedi\Downloads\apache-maven-3.8.4\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17.0.2"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="17.0.2"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="maven.home" value="C:\Users\cchitneedi\Downloads\apache-maven-3.8.4"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2022-01-18"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="loginTest" classname="teseCases.LoginPageTest" time="4.308"/>
+  <testcase name="loginTest" classname="teseCases.LoginPageTest" time="30.368"/>
+  <testcase name="newcalloutcreatetest" classname="teseCases.CreateCalloutTestPage" time="8.243"/>
+  <testcase name="provideCalloutTitle" classname="teseCases.EditCalloutsTest" time="9.048"/>
+  <testcase name="deleteTest" classname="teseCases.DeleteCalloutTest" time="17.774"/>
+  <testcase name="newResourceFlowTest" classname="teseCases.CreateResourceFlowTestPage" time="10.314"/>
+  <testcase name="provideResourceTitle" classname="teseCases.EditResourceFlowsTest" time="12.228"/>
+  <testcase name="deleteTest" classname="teseCases.DeleteResourceFlowTest" time="19.698"/>
+  <testcase name="newArticleCreateTest" classname="teseCases.CreateNewsArticlesTestPage" time="9.217"/>
+  <testcase name="provideNewsArticleTitle" classname="teseCases.EditNewsArticlesTest" time="10.539"/>
+  <testcase name="deleteTest" classname="teseCases.DeleteNewsArticleTest" time="18.822"/>
+  <testcase name="newDBLCreateTest" classname="teseCases.CreateDataBaseListingsTestPage" time="9.281"/>
+  <testcase name="provideDatabaseListTitle" classname="teseCases.EditDatabaseListingTest" time="11.45"/>
+  <testcase name="deleteTest" classname="teseCases.DeleteDatabaseListingTest" time="23.421"/>
+  <testcase name="newdirectorycreatetest" classname="teseCases.createDirectoryListingsTestPage" time="8.605"/>
+  <testcase name="provideDirectoryListTitle" classname="teseCases.EditDirectoryListingsTest" time="9.595"/>
+  <testcase name="deleteTest" classname="teseCases.DeleteDirectoryListingTest" time="17.597"/>
+  <testcase name="newCustomCreateTest" classname="teseCases.CreateCustomBlockTestPage" time="7.614"/>
+  <testcase name="provideCustomBLockTitle" classname="teseCases.EditCustomBlockTest" time="9.041"/>
+  <testcase name="deleteTest" classname="teseCases.DeleteCustomTest" time="19.381"/>
+  <testcase name="newPageCreateTest" classname="teseCases.CreatePagesTestPage" time="9.034"/>
+  <testcase name="providePageTitle" classname="teseCases.EditPagesTest" time="7.598"/>
+  <testcase name="deletePageTest" classname="teseCases.DeletePagesTest" time="15.385"/>
+  <testcase name="newResearchGuideTest" classname="teseCases.CreateResearchGuidesTestPage" time="21.997"/>
+  <testcase name="provideResearchGuideTitleTitle" classname="teseCases.EditResearchGuidesTest" time="9.299"/>
+  <testcase name="deleteResearchGuideTest" classname="teseCases.DeleteResearchGuideTest" time="23.172"/>
+</testsuite>
