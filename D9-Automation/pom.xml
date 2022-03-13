@@ -13,8 +13,7 @@
 		<maven.compiler.source>1.7</maven.compiler.source>
 		<maven.compiler.target>1.7</maven.compiler.target>
 	</properties>
-	<dependencies>
-		<exclusions>
+	<exclusions>
 			<exclusion>
 				<groupId>com.sun.jmx</groupId>
 				<artifactId>jmxri</artifactId>
@@ -28,6 +27,7 @@
 				<artifactId>jms</artifactId>
 			</exclusion>
 			</exclusions>
+	<dependencies>
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
