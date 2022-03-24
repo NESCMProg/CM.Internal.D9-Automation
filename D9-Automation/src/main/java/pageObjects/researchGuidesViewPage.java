@@ -16,7 +16,7 @@ public class researchGuidesViewPage extends base {
 	@FindBy(xpath="//a[contains(text(),'Add Research guide')]")
 	WebElement addNewResearch;
 	
-	@FindBy(xpath="//input[@id='edit-title-0-value']")
+	@FindBy(css="#edit-title-0-value")
 	WebElement researchTitle;
 	
 	@FindBy(xpath="//select[@id='edit-field-type']")
