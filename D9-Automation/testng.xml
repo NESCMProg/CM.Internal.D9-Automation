@@ -33,6 +33,9 @@
 			<class name="teseCases.CreateResearchGuidesTestPage" />
 			<class name="teseCases.EditResearchGuidesTest" />
 			<class name="teseCases.DeleteResearchGuideTest" />
+			<class name="teseCases.CreateIndexEntriesPageTestPage" />
+			<class name="teseCases.EditIndexEntryTest" />
+			<class name="teseCases.DeleteIndexEntryPageTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
