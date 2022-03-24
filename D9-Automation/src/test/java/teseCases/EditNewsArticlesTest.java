@@ -130,7 +130,7 @@ public class EditNewsArticlesTest extends base {
 	@Test(dataProvider="InputNewsArticleData", priority=1)
 	public void provideNewsArticleTitle(String inputNewsTitle, String editedTitle, String E_author) {
 		Log.info("Module Name: News Article");
-		Log.info("Test Case ID: TS_NA_05");
+		Log.info("Test Case ID: TS_NA_02");
 		Log.info("Test Designed By: Charan");
 		Log.info("Test Priority: High");
 		Log.info("Test Executed By: "+machineName );

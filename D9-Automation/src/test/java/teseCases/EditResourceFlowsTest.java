@@ -129,7 +129,7 @@ public class EditResourceFlowsTest extends base {
 	@Test(dataProvider="InputResourceFlowData", priority=1)
 	public void provideResourceTitle(String existingTitle, String EditedTitle, String E_UPC1, String E_title1, String E_author1) {
 		Log.info("Module Name: Resource Flows");
-		Log.info("Test Case ID: TS_RF_05");
+		Log.info("Test Case ID: TS_RF_02");
 		Log.info("Test Designed By: Charan");
 		Log.info("Test Priority: High");
 		Log.info("Test Executed By: "+machineName );

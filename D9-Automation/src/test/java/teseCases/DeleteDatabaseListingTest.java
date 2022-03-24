@@ -79,7 +79,7 @@ public class DeleteDatabaseListingTest extends base {
 	
 	@Test(dataProvider="getdeleteDBLData")
 	public void deleteTest(String D_DBLTitle, String Main_URL1_D, String subURL1_D, String subLink1_D, String deleteDBLTitle) {
-		Log.info("Test Case ID: TS_DBL_02");
+		Log.info("Test Case ID: TS_DBL_03");
 		Log.info("Test Designed By: Charan");
 		Log.info("Test Priority: High");
 		Log.info("Module Name: Database Listing");
@@ -94,7 +94,7 @@ public class DeleteDatabaseListingTest extends base {
 			Log.info("'"+deleteDBLTitle+"'" +" is deleted successfully");
 		}
 		catch(Exception e1) {
-			
+			Log.error("Failed to Delete: "+deleteDBLTitle);
 		}
 		
 		Log.info("Test Result: Pass");

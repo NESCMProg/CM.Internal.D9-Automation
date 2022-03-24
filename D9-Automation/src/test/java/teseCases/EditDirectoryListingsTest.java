@@ -118,7 +118,7 @@ public class EditDirectoryListingsTest extends base {
 	@Test(dataProvider = "InputDirectoryListingsData", priority = 1)
 	public void provideDirectoryListTitle(String InputDirTitle1 ,String InputDirTitle2,  String E_FirstName, String E_lastName, String E_jobTitle, String E_Location, String E_LinkedinURL, String E_LinkedinText) {
 		Log.info("Module Name: Directory Listings");
-		Log.info("Test Case ID: TS_DL_05");
+		Log.info("Test Case ID: TS_DL_02");
 		Log.info("Test Designed By: Charan");
 		Log.info("Test Priority: High");
 		Log.info("Test Executed By: " + machineName);

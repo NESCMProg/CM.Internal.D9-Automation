@@ -39,6 +39,18 @@ public class NewsArticleViewPage extends base {
 	@FindBy(xpath="//tbody/tr[1]/td[8]/div[1]/div[1]/ul[1]/li[2]/button[1]")
 	WebElement TraceDeleteBtnArrow;
 	
+	@FindBy(css="div.messages.messages-status")
+	WebElement createMethodSuccess;
+	
+	@FindBy(xpath="//body/div[2]/div[1]/main[1]/div[2]/div[2]/div[1]/div[1]/div[2]")
+	WebElement titleValidationError;
+	
+	 @FindBy(css="div.site-slogan")
+	 WebElement viewPageSlogan;
+	
+	@FindBy(css="div.form-item__error-message")
+	WebElement fieldError;
+	
 	public NewsArticleViewPage() {
 		PageFactory.initElements(driver, this);	
 	}
@@ -49,12 +61,24 @@ public class NewsArticleViewPage extends base {
 		author.sendKeys(newsAuthor);
 		try {
 			submitBtn.click();
+			Thread.sleep(1000);
 			Log.info("clicked on SAVE button after providing details");
+			String NAPageSlogan = viewPageSlogan.getText();
+			Log.info("Page Slogan: "+NAPageSlogan);
+			Thread.sleep(2000);
+			String NA_MSG = createMethodSuccess.getText();
+			Log.info("Status Message: "+NA_MSG);
+			Log.info("Test Result: Pass");
+			
 		}
 		catch(Exception e) {
-			Log.info("Unable to get status message, but News Article has been created");
+			String titleWarning = titleValidationError.getText();
+			Log.error("Error Message: "+titleWarning);
+			String elementError = fieldError.getText();
+			Log.error("Field Message: "+elementError);
+			Log.error("Test Result: Fail to create a News Article, since mandatory field not provided");
 		}
-		System.out.println("News Article is created");
+		
 	}
 	
 	public void searchNewsArticleTitle(String inputNewsTitle, String editedTitle, String E_author) {

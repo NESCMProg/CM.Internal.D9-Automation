@@ -78,7 +78,7 @@ public class DeleteResourceFlowTest extends base {
 	
 	@Test(dataProvider="getdeleteResourceData")
 	public void deleteTest(String mainResourceTitle, String upc_1, String rtitle11, String author1, String deleteResourceTitle) {
-		Log.info("Test Case ID: TS_RF_02");
+		Log.info("Test Case ID: TS_RF_03");
 		Log.info("Test Designed By: Charan");
 		Log.info("Test Priority: High");
 		Log.info("Module Name: Resource Flows");

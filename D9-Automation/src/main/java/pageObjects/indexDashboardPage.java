@@ -8,10 +8,10 @@ import resources.base;
 
 public class indexDashboardPage extends base {
 
-	@FindBy(xpath= "//span[contains(text(),'Index Page')]")
+	@FindBy(linkText= "Index Page")
 	WebElement indexDashboard_IndexPageLink;
 	
-	@FindBy(xpath= "//span[contains(text(),'Index Entry')]")
+	@FindBy(linkText= "Index Entries")
 	WebElement indexDashboard_IndexEntryLink;
 	
 	

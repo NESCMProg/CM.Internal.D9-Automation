@@ -61,6 +61,18 @@ public class resourceViewPage extends base {
 
 	@FindBy(xpath = "//input[@value='Delete']")
 	WebElement resourceFlowDelete;
+	
+	@FindBy(css="div.messages__content")
+	WebElement createMethodSuccess;
+	
+	@FindBy(xpath="//h1[contains(text(),'Resource Flows')]")
+	 WebElement viewPageTitle;
+	
+	@FindBy(xpath="//body/div[2]/div[1]/main[1]/div[2]/div[2]/div[1]/div[1]/div[2]")
+	WebElement titleValidationError;
+	
+	@FindBy(css="div.form-item__error-message")
+	WebElement fieldError;
 
 	public resourceViewPage() {
 		PageFactory.initElements(driver, this);
@@ -70,22 +82,26 @@ public class resourceViewPage extends base {
 			throws InterruptedException {
 		addNewResource.click();
 		resourceTitle.sendKeys(rtitle1);
-		Log.info("Title Name from Excel: " + rtitle1);
 		UPC.sendKeys(upc1);
-		Log.info("UPC value from Excel: " + upc1);
 		title.sendKeys(rtitle11);
-		Log.info("subTitle value from Excel: " + rtitle11);
 		author.sendKeys(author1);
-		Log.info("author value from Excel: " + author1);
 		try {
 			submitBtn.click();
-			Log.info("clicked on SAVE button after providing details");
-			Log.info("Successfully created a Resource Flow with title name: " + rtitle1);
+			Thread.sleep(1000);
+			String RFPageTitle = viewPageTitle.getText();
+			Log.info("Page Title: "+RFPageTitle);
+			Thread.sleep(2000);
+			String RF_MSG = createMethodSuccess.getText();
+			Log.info("Status Message: "+RF_MSG);
+			Log.info("Test Result: Pass");
 		} catch (Exception e) {
-			// Log.error("Unable to find SAVE button after providing details");
+			String titleWarning = titleValidationError.getText();
+			Log.error("Error Message: "+titleWarning);
+			String elementError = fieldError.getText();
+			Log.error("Field Message: "+elementError);
+			Log.error("Test Result: Fail to create a Resource Flow, since mandatory field not provided");
 		}
 
-		System.out.println("Resource Flow is saved");
 
 	}
 

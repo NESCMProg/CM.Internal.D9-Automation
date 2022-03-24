@@ -78,7 +78,7 @@ public class DeleteNewsArticleTest extends base {
 	
 	@Test(dataProvider="getdeleteData")
 	public void deleteTest(String D_title, String D_author, String deletedTitle) {
-		Log.info("Test Case ID: TS_NA_02");
+		Log.info("Test Case ID: TS_NA_03");
 		Log.info("Test Designed By: Charan");
 		Log.info("Test Priority: High");
 		Log.info("Module Name: News Article");
@@ -93,7 +93,7 @@ public class DeleteNewsArticleTest extends base {
 			Log.info("'"+deletedTitle+"'"+" is deleted successfully");
 		}
 		catch(Exception e1) {
-			
+			Log.error("Failed to Delete: "+deletedTitle);
 		}
 		
 		Log.info("Test Result: Pass");

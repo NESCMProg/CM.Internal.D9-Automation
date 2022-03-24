@@ -99,7 +99,7 @@ public class CreateResearchGuidesTestPage extends base {
 				+ "New Research Guide is created with respective Title name and can be viewed in Research Guides table grid.");
 		rgvp.clickResearchNewandSaveBtn(C_researchTitle, C_termRG, C_tabTitle_1, C_tabURL_1);
 		Log.info("Condition in Test Scenario Id: TS_RG_01 is Executed Successfully");
-		Log.info("Test Result: Pass");
+		
 
 	}
 

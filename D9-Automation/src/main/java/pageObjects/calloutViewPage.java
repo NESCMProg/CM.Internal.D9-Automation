@@ -60,7 +60,14 @@ public class calloutViewPage extends base{
 	@FindBy(xpath="//input[@value='Delete']")
 	WebElement calloutDelete;
 	
-
+	@FindBy(xpath="//body/div[2]/div[1]/main[1]/div[2]/div[2]/div[1]/div[2]")
+	WebElement successfulCalloutMsg;
+	
+	@FindBy(css="div.messages__content")
+	WebElement CreateMethodError;
+	
+	@FindBy(css="div.form-item__error-message")
+	WebElement fieldError;
 	
 	public calloutViewPage() {
 		PageFactory.initElements(driver, this);	
@@ -73,23 +80,30 @@ public class calloutViewPage extends base{
 	
 	
 	public void  clickonNewBtnandSaveBtn(String Callouttitle1) throws InterruptedException{
+	
+			addNewCallout.click();
+			title.sendKeys(Callouttitle1);
+			//wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//input[@id='edit-submit']")));
+			try {
+				submitBtn.click();
+				Thread.sleep(1000);
+				Log.info("clicked on SAVE button after providing details");
+				Thread.sleep(2000);
+				String COMsg = successfulCalloutMsg.getText();
+				Log.info("Status message: "+COMsg);
+				Log.info("Callout created with Title name: "+Callouttitle1);
+				Log.info("Test Result: Pass");
+			}
+			catch(Exception e) {
+				String CO_Headermsg = CreateMethodError.getText();
+				Log.error("Error Message: "+CO_Headermsg);
+				String elementError = fieldError.getText();
+				Log.error("Field Message: "+elementError);
+				Log.error("Test Result: Fail to create Callout, since mandatory field not provided");
+			}
 		
-		addNewCallout.click();
-		title.sendKeys(Callouttitle1);
-		Log.info("Title Name from Excel: " +Callouttitle1);
-		//wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//input[@id='edit-submit']")));
-		try {
-			submitBtn.click();
-			Log.info("clicked on SAVE button after providing details");
-		}
-		catch(Exception e) {
-			Log.info("Unable to get status message, but Callout has been created");
-		}
-		
-		System.out.println("Callout is saved");
-		
-		
-	}
+	
+}
 	
 	public void searchCalloutTitle(String inputCalloutTitle, String editedTitle) {
 		try {

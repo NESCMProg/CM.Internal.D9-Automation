@@ -1,7 +1,11 @@
 C:\Users\cchitneedi\eclipse-2\D9-Automation\src\test\java\teseCases\CreateCustomBlockTestPage.java
+C:\Users\cchitneedi\eclipse-2\D9-Automation\src\test\java\teseCases\DeleteIndexPageTest.java
 C:\Users\cchitneedi\eclipse-2\D9-Automation\src\test\java\teseCases\CreateNewsArticlesTestPage.java
 C:\Users\cchitneedi\eclipse-2\D9-Automation\src\test\java\teseCases\DeletePagesTest.java
+C:\Users\cchitneedi\eclipse-2\D9-Automation\src\test\java\teseCases\DeleteReservesTest.java
+C:\Users\cchitneedi\eclipse-2\D9-Automation\src\test\java\teseCases\CreateIndexEntriesPageTestPage.java
 C:\Users\cchitneedi\eclipse-2\D9-Automation\src\test\java\teseCases\CreatePagesTestPage.java
+C:\Users\cchitneedi\eclipse-2\D9-Automation\src\test\java\teseCases\EditIndexPageTest.java
 C:\Users\cchitneedi\eclipse-2\D9-Automation\src\test\java\teseCases\EditCustomBlockTest.java
 C:\Users\cchitneedi\eclipse-2\D9-Automation\src\test\java\teseCases\EditCalloutsTest.java
 C:\Users\cchitneedi\eclipse-2\D9-Automation\src\test\java\teseCases\EditDirectoryListingsTest.java
@@ -10,12 +14,16 @@ C:\Users\cchitneedi\eclipse-2\D9-Automation\src\test\java\teseCases\DeleteCustom
 C:\Users\cchitneedi\eclipse-2\D9-Automation\src\test\java\teseCases\DeleteDirectoryListingTest.java
 C:\Users\cchitneedi\eclipse-2\D9-Automation\src\test\java\teseCases\CreateResourceFlowTestPage.java
 C:\Users\cchitneedi\eclipse-2\D9-Automation\src\test\java\teseCases\CreateResearchGuidesTestPage.java
+C:\Users\cchitneedi\eclipse-2\D9-Automation\src\test\java\teseCases\CreateIndexPageTestPage.java
 C:\Users\cchitneedi\eclipse-2\D9-Automation\src\test\java\teseCases\EditPagesTest.java
+C:\Users\cchitneedi\eclipse-2\D9-Automation\src\test\java\teseCases\EditReservesTest.java
+C:\Users\cchitneedi\eclipse-2\D9-Automation\src\test\java\teseCases\DeleteIndexEntryPageTest.java
 C:\Users\cchitneedi\eclipse-2\D9-Automation\src\test\java\teseCases\DeleteCalloutTest.java
 C:\Users\cchitneedi\eclipse-2\D9-Automation\src\test\java\teseCases\DeleteResearchGuideTest.java
 C:\Users\cchitneedi\eclipse-2\D9-Automation\src\test\java\teseCases\DeleteDatabaseListingTest.java
 C:\Users\cchitneedi\eclipse-2\D9-Automation\src\test\java\teseCases\EditResearchGuidesTest.java
 C:\Users\cchitneedi\eclipse-2\D9-Automation\src\test\java\teseCases\EditResourceFlowsTest.java
+C:\Users\cchitneedi\eclipse-2\D9-Automation\src\test\java\teseCases\CreateReservesTestPage.java
 C:\Users\cchitneedi\eclipse-2\D9-Automation\src\test\java\teseCases\CreateDataBaseListingsTestPage.java
 C:\Users\cchitneedi\eclipse-2\D9-Automation\src\test\java\teseCases\LoginPageTest.java
 C:\Users\cchitneedi\eclipse-2\D9-Automation\src\test\java\teseCases\EditNewsArticlesTest.java
@@ -23,3 +31,4 @@ C:\Users\cchitneedi\eclipse-2\D9-Automation\src\test\java\teseCases\DeleteResour
 C:\Users\cchitneedi\eclipse-2\D9-Automation\src\test\java\teseCases\DeleteNewsArticleTest.java
 C:\Users\cchitneedi\eclipse-2\D9-Automation\src\test\java\teseCases\CreateCalloutTestPage.java
 C:\Users\cchitneedi\eclipse-2\D9-Automation\src\test\java\teseCases\EditDatabaseListingTest.java
+C:\Users\cchitneedi\eclipse-2\D9-Automation\src\test\java\teseCases\EditIndexEntryTest.java

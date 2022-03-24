@@ -50,6 +50,14 @@ public class pagesViewPage extends base {
 	@FindBy(css="#edit-moderation-state-0-state")
 	WebElement ddl;
 	
+	@FindBy(xpath="//h1[contains(text(),'Pages')]")
+	 WebElement viewPageTitle;
+	
+	@FindBy(xpath="//body/div[2]/div[1]/main[1]/div[2]/div[2]/div[1]/div[1]/div[2]")
+	WebElement titleValidationError;
+	
+	@FindBy(css="div.form-item__error-message")
+	WebElement fieldError;
 	
 	public pagesViewPage() {
 		PageFactory.initElements(driver, this);	
@@ -57,21 +65,30 @@ public class pagesViewPage extends base {
 	
 	
 	public void clickPagesNewandSaveBtn(String pgTitle) throws InterruptedException {
-		Log.info("method before add new");
-		addNewPage.click();
-		pageTitle.sendKeys(pgTitle);
-		//Select contentState = new Select(ddl);
-		//contentState.selectByVisibleText(txtformat);
-		Thread.sleep(1000);
-		try {
-			submitBtn.click();
-			Log.info("clicked on SAVE button after providing details");
-			Log.info("Page created with title name: "+pgTitle);
-		}
-		catch(Exception e) {
-			//Log.error("Unable to find SAVE button after providing details");
-		}
-		System.out.println("New Page is created");
+		
+			addNewPage.click();
+			pageTitle.sendKeys(pgTitle);
+			//Select contentState = new Select(ddl);
+			//contentState.selectByVisibleText(txtformat);
+			Thread.sleep(1000);
+			try {
+				submitBtn.click();
+				Thread.sleep(2000);
+				Log.info("clicked on SAVE button after providing details");
+				String pageTitle = viewPageTitle.getText();
+				Log.info("Page Title is: "+pageTitle);
+				Log.info("Page created with title name: "+pgTitle);
+				Log.info("Test Result: Pass");
+			}
+			catch(Exception e) {
+				String titleWarning = titleValidationError.getText();
+				Log.error("Error Message: "+titleWarning);
+				String elementError = fieldError.getText();
+				Log.error("Field Message: "+elementError);
+				Log.error("Test Result: Fail to create a 'Page', since mandatory field not provided");
+			}
+
+		
 		
 		
 	}

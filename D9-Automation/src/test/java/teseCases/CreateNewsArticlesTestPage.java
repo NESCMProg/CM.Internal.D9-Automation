@@ -97,7 +97,7 @@ public class CreateNewsArticlesTestPage extends base {
 				+ "New 'News Article' is created with respective Title name and can be viewed in News Articles table grid.");
 		navp.clickonNewBtnandSaveBtn(newsTitle, newsAuthor);
 		Log.info("Condition in Test Scenario Id: TS_NA_01 is Executed Successfully");
-		Log.info("Test Result: Pass");
+		
 
 	}
 
@@ -105,8 +105,7 @@ public class CreateNewsArticlesTestPage extends base {
 	public void teardown() {
 		driver.quit();
 			Log.info("Browser is closed");
-		
-
+	
 	}
 
 }

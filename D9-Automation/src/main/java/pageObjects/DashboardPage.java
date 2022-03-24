@@ -32,13 +32,13 @@ public class DashboardPage extends base {
 	@FindBy(xpath="//div[@data-id='ds-50000-pages-stacks-dashboardtilesstacks-pages']/div[1]/h4/a")
 	WebElement pagesLink;
 	
-	@FindBy(xpath= "//span[contains(text(),'Reserves')]")
+	@FindBy(linkText= "Reserves")
 	WebElement reservesLink;
 	
 	@FindBy(linkText= "Research guides")
 	WebElement researchGuidesLink;
 	
-	@FindBy(xpath="//span[contains(text(),'Index Pages')]")
+	@FindBy(linkText="Index pages")
 	WebElement indexPagesLink;
 	
 
@@ -83,7 +83,6 @@ public class DashboardPage extends base {
 	}
 	
 	public directoryListingsViewPage clickOnDirectoryListingsLink() {
-		
 		directoryListingsLink.click();
 		return new directoryListingsViewPage();
 	}
@@ -94,12 +93,22 @@ public class DashboardPage extends base {
 	}
 	
 	public reservesViewPage clickonReservesLink() {
-		reservesLink.click();
+		try {
+			reservesLink.click();
+		}
+		catch(Exception e2) {
+			
+		}
 		return new reservesViewPage();
 	}
 	
 	public researchGuidesViewPage clickOnResearchGuideLink() {
-		researchGuidesLink.click();
+		try {
+			researchGuidesLink.click();
+		}
+		catch(Exception e1) {
+			
+		}
 		return new researchGuidesViewPage();
 	}
 	

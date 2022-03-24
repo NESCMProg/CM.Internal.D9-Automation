@@ -77,7 +77,7 @@ public class DeleteDirectoryListingTest extends base {
 
 	@Test(dataProvider = "getdeletedirectorylistData")
 	public void deleteTest(String D_directoryName, String D_lastName, String D_jobTitle, String D_Location, String D_Linkedin, String D_LinkedinText, String D_Directory1, String D_Directory2) {
-		Log.info("Test Case ID: TS_DL_02");
+		Log.info("Test Case ID: TS_DL_03");
 		Log.info("Test Designed By: Charan");
 		Log.info("Test Priority: High");
 		Log.info("Module Name: Directory Listings");

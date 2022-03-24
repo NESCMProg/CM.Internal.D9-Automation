@@ -117,7 +117,7 @@ public class EditPagesTest extends base {
 	@Test(dataProvider = "InputPageData", priority = 1)
 	public void providePageTitle(String existingPageTitle, String E_Title) {
 		Log.info("Module Name: Pages");
-		Log.info("Test Case ID: TS_PG_05");
+		Log.info("Test Case ID: TS_PG_02");
 		Log.info("Test Designed By: Charan");
 		Log.info("Test Priority: High");
 		Log.info("Test Executed By: " + machineName);

@@ -78,7 +78,7 @@ public class DeleteResearchGuideTest extends base {
 
 	@Test(dataProvider = "getdeleteRGData")
 	public void deleteResearchGuideTest(String RG_Title, String D_termRG, String D_tabTitle_1, String D_tabURL_1, String D_RGTitle) {
-		Log.info("Test Case ID: TS_RG_02");
+		Log.info("Test Case ID: TS_RG_03");
 		Log.info("Test Designed By: Charan");
 		Log.info("Test Priority: High");
 		Log.info("Module Name: Research Guide");
@@ -93,7 +93,7 @@ public class DeleteResearchGuideTest extends base {
 			Log.info("'" + RG_Title + "'" + " Research Guide is created first");
 			Log.info("'" + D_RGTitle + "'" + " is deleted successfully");
 		} catch (Exception e1) {
-
+			Log.error("Failed to Delete: "+D_RGTitle);
 		}
 
 		Log.info("Test Result: Pass");

@@ -63,35 +63,52 @@ public class DataBaseListingsViewPage extends base {
 	
 	@FindBy(xpath="//tbody/tr[1]/td[7]/div[1]/div[1]/ul[1]/li[2]/button[1]")
 	WebElement TraceDeleteBtnArrow;
-	
 
+	
+	@FindBy(css=".messages__content")
+	WebElement TitleHeaderError;
+	
+	@FindBy(css=".form-item__error-message")
+	WebElement titleFieldError;
+	
+	@FindBy(xpath="//main[@id='main-content']/div[1]/div[2]")
+	WebElement successfulDBLtMsg;
+	
+	@FindBy(css="div.site-slogan")
+	WebElement viewPagesuccess;
 	
 	public DataBaseListingsViewPage() {
 		PageFactory.initElements(driver, this);	
 	}
 	
 	public void clickDBLNewBtnandSaveBtn(String DBLTITLE, String Main_URL1, String C_subURL1, String C_subLinkText1) throws InterruptedException {
-		addNewDBL.click();
-		DBLTitle.sendKeys(DBLTITLE);
-		MainURL.sendKeys(Main_URL1);
-		subURL1.sendKeys(C_subURL1);
-		Thread.sleep(1000);
-		subLinkText1.sendKeys(C_subLinkText1);
-		try {
-			submitBtn.click();
-			Log.info("clicked on SAVE button after providing details");
-			Log.info("Databaselist is saved with title name: "+DBLTITLE);
-		}
-		catch(Exception e) {
-			//Log.error("Unable to find SAVE button after providing details");
-		}
-		System.out.println("Database Listing is saved");
 		
+			addNewDBL.click();
+			DBLTitle.sendKeys(DBLTITLE);
+			MainURL.sendKeys(Main_URL1);
+			subURL1.sendKeys(C_subURL1);
+			Thread.sleep(1000);
+			subLinkText1.sendKeys(C_subLinkText1);
+			try {
+				submitBtn.click();
+				Thread.sleep(1000);
+				Log.info("clicked on SAVE button after providing details");
+				String slogan = viewPagesuccess.getText();
+				Log.info("Site Slogan: "+slogan);
+				String DBLMsg = successfulDBLtMsg.getText();
+				Log.info("Status Message: "+DBLMsg);
+				System.out.println(DBLMsg);
+				Log.info("Test Result: Pass");
+			}
+			catch(Exception e) {
+				String CB_Headermsg = TitleHeaderError.getText();
+				Log.error("Error Message: "+CB_Headermsg);
+				String elementError = titleFieldError.getText();
+				Log.error("Field Message: "+elementError);
+				Log.info("Test Result: Fail to create a Database List, since mandatory field not provided");
+			}
 	
-		
-	
-		
-		
+
 		
 	}
 	

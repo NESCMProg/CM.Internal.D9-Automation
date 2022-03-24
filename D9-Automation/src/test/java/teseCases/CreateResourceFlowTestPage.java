@@ -100,7 +100,6 @@ public class CreateResourceFlowTestPage extends base {
 						+ "New Resource Flow is created with respective Title name and and be viewed in Resource Flow table ");
 		rfvp.clickResourceFlowNewandSaveBtn(rtitle1, upc1, rtitle11, author1);
 		Log.info("Test Scenario Id: TS_RF_01 is Executed Successfully");
-		Log.info("Test Result: Pass");
 		System.out.println(rtitle1);
 	}
 

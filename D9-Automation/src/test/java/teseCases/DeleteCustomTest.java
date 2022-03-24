@@ -78,7 +78,7 @@ public class DeleteCustomTest extends base {
 	
 	@Test(dataProvider="getdeleteData")
 	public void deleteTest(String title1_D, String customLog_D, String deleteCustomTitle) {
-		Log.info("Test Case ID: TS_CB_02");
+		Log.info("Test Case ID: TS_CB_03");
 		Log.info("Test Designed By: Charan");
 		Log.info("Test Priority: High");
 		Log.info("Module Name: Custom Block");
@@ -94,7 +94,7 @@ public class DeleteCustomTest extends base {
 			Log.info("Test Result: Pass");
 		}
 		catch(Exception e1) {
-			Log.error("custom block not deleted");
+			Log.error("Failed to Delete: "+deleteCustomTitle);
 		}
 		
 		

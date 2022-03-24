@@ -119,7 +119,7 @@ public class EditDatabaseListingTest extends base {
 	@Test(dataProvider = "InputDatabaseListData", priority = 1)
 	public void provideDatabaseListTitle(String inputDBLTitle, String editedTitle, String editedMainURL, String editedSubTitle1URL, String editedsubTitle1) {
 		Log.info("Module Name: Database Listings");
-		Log.info("Test Case ID: TS_DBL_05");
+		Log.info("Test Case ID: TS_DBL_02");
 		Log.info("Test Designed By: Charan");
 		Log.info("Test Priority: High");
 		Log.info("Test Executed By: " + machineName);

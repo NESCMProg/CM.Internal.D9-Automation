@@ -117,7 +117,7 @@ public class EditCustomBlockTest extends base {
 	@Test(dataProvider = "InputCustomBlockData", priority = 1)
 	public void provideCustomBLockTitle(String inputCustomTitle, String editedTitle, String E_CustomLog) {
 		Log.info("Module Name: Custom Block");
-		Log.info("Test Case ID: TS_CB_05");
+		Log.info("Test Case ID: TS_CB_02");
 		Log.info("Test Designed By: Charan");
 		Log.info("Test Priority: High");
 		Log.info("Test Executed By: " + machineName);

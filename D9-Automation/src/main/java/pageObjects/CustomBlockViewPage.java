@@ -49,27 +49,46 @@ public class CustomBlockViewPage extends base {
 	@FindBy(xpath="//input[@value='Delete']")
 	WebElement customDelete;
 	
+	@FindBy(xpath="//body/div[2]/div[1]/main[1]/div[2]/div[2]/div[1]/div[2]")
+	WebElement successfulCustomMsg;
 	
+	@FindBy(css="div.messages__content")
+	WebElement CreateMethodError;
 	
+	@FindBy(css="div.form-item__error-message")
+	WebElement fieldError;
 	
 	public CustomBlockViewPage() {
 		PageFactory.initElements(driver, this);	
 	}
 	
 	public void clickCustomNewBtnandSaveBtn(String title1, String C_RLM) throws InterruptedException {
-		addNewCustom.click();
-		title.sendKeys(title1);
-		//TextFormat.selectByVisibleText(txtformat);
-		//System.out.println(txtformat);
-		Customlm.sendKeys(C_RLM);
-		try {
-			submitBtn.click();
-			Log.info("clicked on SAVE button after providing details");
-			Log.info("Successfully created a Custom Block with title name: " +title1);
-		}
-		catch(Exception e) {
-			//Log.error("Unable to find SAVE button after providing details");
-		}
+		
+			addNewCustom.click();
+			title.sendKeys(title1);
+			//TextFormat.selectByVisibleText(txtformat);
+			//System.out.println(txtformat);
+			Customlm.sendKeys(C_RLM);
+			try {
+				submitBtn.click();
+				Thread.sleep(1000);
+				Log.info("clicked on SAVE button after providing details");
+				Thread.sleep(2000);
+				String CBMsg = successfulCustomMsg.getText();
+				Log.info("Status Message: "+CBMsg);
+				Log.info("Successfully created a Custom Block with title name: " +title1);
+			}
+			catch(Exception e) {
+				String CB_Headermsg = CreateMethodError.getText();
+				Log.error(CB_Headermsg);
+				System.out.println(CB_Headermsg);
+				String elementError = fieldError.getText();
+				Log.error(elementError);
+				System.out.println(elementError);
+				Log.error("Test Result: Fail to create a Custom Block, since mandatory field not provided");
+			}
+		
+		
 		
 		
 	}

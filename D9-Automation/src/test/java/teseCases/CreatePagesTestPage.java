@@ -100,7 +100,7 @@ public class CreatePagesTestPage extends base {
 						+ " 'Create Page'. Fill details and click on [SAVE] button. New Page is created");
 		pvp.clickPagesNewandSaveBtn(pgTitle);
 		Log.info("Test Scenario Id: TS_PG_01 is Executed Successfully");
-		Log.info("Test Result: Pass");
+		
 	}
 
 	@AfterMethod

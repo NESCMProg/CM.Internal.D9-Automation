@@ -119,7 +119,7 @@ public class EditResearchGuidesTest extends base {
 	@Test(dataProvider = "InputResearchGuideData", priority = 1)
 	public void provideResearchGuideTitleTitle(String existingResearchTitle, String E_researchTitle) {
 		Log.info("Module Name: Research Guides");
-		Log.info("Test Case ID: TS_RG_05");
+		Log.info("Test Case ID: TS_RG_02");
 		Log.info("Test Designed By: Charan");
 		Log.info("Test Priority: High");
 		Log.info("Test Executed By: " + machineName);

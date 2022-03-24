@@ -58,17 +58,32 @@ public class researchGuidesViewPage extends base {
 	@FindBy(xpath="//a[contains(text(),'Dashboard')]")
 	WebElement dashboardLink;
 	
-	
+	 @FindBy(css="div.name-and-slogan")
+	 WebElement viewSiteSlogan;
 	
 	@FindBy(xpath="//input[@value='Delete']")
 	WebElement researchGuideDelete;
+	
+	@FindBy(css="div.messages.messages-status")
+	WebElement createMethodSuccess;
+	
+	@FindBy(xpath="//body/div[2]/div[1]/main[1]/div[2]/div[2]/div[1]/div[1]/div[2]")
+	WebElement titleValidationError;
+	
+	@FindBy(css="div.form-item__error-message")
+	WebElement fieldError;
 	
 	public researchGuidesViewPage() {
 		PageFactory.initElements(driver, this);	
 	}
 	
 	public void clickResearchNewandSaveBtn(String C_researchTitle, String C_termRG, String C_tabTitle_1, String C_tabURL_1) throws InterruptedException {
-		addNewResearch.click();
+		try {
+			addNewResearch.click();
+		}
+		catch(Exception e1) {
+			
+		}
 		researchTitle.sendKeys(C_researchTitle);
 		researchType.click();
 		Select termRG = new Select(researchType);
@@ -78,24 +93,23 @@ public class researchGuidesViewPage extends base {
 		tabURL_1.sendKeys(C_tabURL_1);
 		Thread.sleep(1000);
 		try {
-			
 			submitBtn.click();
-			Log.info("Research Guide is created");
-			Log.info("Successfully created a Resource Flow with title name: " +C_researchTitle);
+			Thread.sleep(1000);
+			String RGPageSlogan = viewSiteSlogan.getText();
+			Log.info("Page Title: "+RGPageSlogan);
+			Thread.sleep(2000);
+			String RG_MSG = createMethodSuccess.getText();
+			Log.info("Status Message: "+RG_MSG);
+			Log.info("Test Result: Pass");
 		}
 		catch(Exception e) {
-			
+			String titleWarning = titleValidationError.getText();
+			Log.error("Error Message: "+titleWarning);
+			String elementError = fieldError.getText();
+			Log.error("Field Message: "+elementError);
+			Log.error("Test Result: Fail to create a Research Guide, since mandatory field not provided");
 		}
-		System.out.println("New Research Guide is created");
-		Thread.sleep(1000);
-		try {
-			dashboard.click();
-			
-		}
-		catch(Exception e1) {
-			
-		}
-		dashToResearchGuidesLink.click();
+		
 	}
 	public void searchResearchGuideTitle(String existingResearchTitle, String E_researchTitle) {
 		try {

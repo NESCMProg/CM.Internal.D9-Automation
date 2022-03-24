@@ -77,7 +77,7 @@ public class DeletePagesTest extends base {
 
 	@Test(dataProvider = "getdeletePageData")
 	public void deletePageTest(String d_pageTitle, String deletePageTitle) {
-		Log.info("Test Case ID: TS_PG_02");
+		Log.info("Test Case ID: TS_PG_03");
 		Log.info("Test Designed By: Charan");
 		Log.info("Test Priority: High");
 		Log.info("Module Name: Pages");
@@ -92,7 +92,7 @@ public class DeletePagesTest extends base {
 			Log.info("'" + d_pageTitle + "'" + " is created first");
 			Log.info("'" + deletePageTitle + "'" + " is deleted successfully");
 		} catch (Exception e1) {
-
+			Log.error("Failed to Delete: "+deletePageTitle);
 		}
 
 		Log.info("Test Result: Pass");

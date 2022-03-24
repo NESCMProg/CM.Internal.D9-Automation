@@ -93,12 +93,11 @@ public class CreateDataBaseListingsTestPage extends base {
 		Log.info("Test Priority: High");
 		Log.info("Test Executed By: "+machineName );
 		Log.info("Test Executed Date: " + currentDateTime);
-		Log.info("Test Description: Navigate to Database Listings Page in Database Listings Tile. Click on [Add New] button to create a new Database List."
+		Log.info("Test Description: Navigate to Database Listings Page in Database Listings Tile. Click on [+Add Database listing] button to create a new Database List."
 				+ " Page navigates to 'Create Database Listing' page. Fill the details and click on [Save] button. "
 				+ "New Database List is created with respective Title name and can be viewed in Database Listings table grid.");
 		dblvp.clickDBLNewBtnandSaveBtn(DBLTITLE, Main_URL1, C_subURL1, C_subLinkText1);
 		Log.info("Condition in Test Scenario Id: TS_DBL_01 is Executed Successfully");
-		Log.info("Test Result: Pass");
 
 	}
 
@@ -106,8 +105,6 @@ public class CreateDataBaseListingsTestPage extends base {
 	public void teardown() {
 		driver.quit();
 			Log.info("Browser is closed");
-		
-
 	}
 
 }

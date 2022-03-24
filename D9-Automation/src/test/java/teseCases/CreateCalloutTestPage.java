@@ -97,7 +97,6 @@ public class CreateCalloutTestPage extends base {
 				+ "New callout is created with respective Title name and can be viewed in Callouts table grid.");
 		covp.clickonNewBtnandSaveBtn(callouttitle1);
 		Log.info("Condition in Test Scenario Id: TS_CO_01 is Executed Successfully");
-		Log.info("Test Result: Pass");
 
 	}
 
@@ -105,8 +104,6 @@ public class CreateCalloutTestPage extends base {
 	public void teardown() {
 		driver.quit();
 			Log.info("Browser is closed");
-		
-
 	}
 
 }

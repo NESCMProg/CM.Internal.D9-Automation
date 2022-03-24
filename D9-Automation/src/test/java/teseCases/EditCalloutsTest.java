@@ -129,7 +129,7 @@ public class EditCalloutsTest extends base {
 	@Test(dataProvider="InputCalloutData", priority=1)
 	public void provideCalloutTitle(String inputExcelTitle, String editedTitle1) {
 		Log.info("Module Name: Callouts");
-		Log.info("Test Case ID: TS_CO_05");
+		Log.info("Test Case ID: TS_CO_02");
 		Log.info("Test Designed By: Charan");
 		Log.info("Test Priority: High");
 		Log.info("Test Executed By: "+machineName );

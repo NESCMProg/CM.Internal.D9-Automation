@@ -86,27 +86,26 @@ public class CreateCustomBlockTestPage extends base {
 	}
 
 	@Test(dataProvider = "getCustomBlockData")
-	public void newCustomCreateTest(String title1, String C_RLM) throws InterruptedException  {
+	public void newCustomCreateTest(String title1, String C_RLM) throws InterruptedException {
 		Log.info("Module Name: Custom Block");
 		Log.info("Test Case ID: TS_CB_01");
 		Log.info("Test Designed By: Charan");
 		Log.info("Test Priority: High");
-		Log.info("Test Executed By: "+machineName );
+		Log.info("Test Executed By: " + machineName);
 		Log.info("Test Executed Date: " + currentDateTime);
-		Log.info("Test Description: Navigate to Custom Block Page in Custom Block Tile. Click on [Add New] button to create a new Custom."
-				+ " Page navigates to 'Create Custom Block' page. Fill the details and click on [Save] button. "
-				+ "New 'Custom Block' is created with respective Title name and can be viewed in Custom Block table grid.");
+		Log.info(
+				"Test Description: Navigate to Custom Block Page in Custom Block Tile. Click on [Add custom block] button to create a new Custom."
+						+ " Page navigates to 'Create Custom Block' page. Fill the details and click on [Save] button. "
+						+ "New 'Custom Block' is created with respective Title name and can be viewed in Custom Block table grid.");
 		cbvp.clickCustomNewBtnandSaveBtn(title1, C_RLM);
 		Log.info("Condition in Test Scenario Id: TS_CB_01 is Executed Successfully");
-		Log.info("Test Result: Pass");
 
 	}
 
 	@AfterMethod
 	public void teardown() {
 		driver.quit();
-			Log.info("Browser is closed");
-		
+		Log.info("Browser is closed");
 
 	}
 

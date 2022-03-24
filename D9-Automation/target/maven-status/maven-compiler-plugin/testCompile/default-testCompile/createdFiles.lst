@@ -1,4 +1,8 @@
+teseCases\EditIndexPageTest.class
+teseCases\DeleteReservesTest.class
 teseCases\createDirectoryListingsTestPage.class
+teseCases\EditReservesTest.class
+teseCases\DeleteIndexPageTest.class
 teseCases\DeleteCalloutTest.class
 teseCases\DeleteCustomTest.class
 teseCases\EditCalloutsTest.class
@@ -6,11 +10,15 @@ teseCases\CreateCalloutTestPage.class
 teseCases\EditNewsArticlesTest.class
 teseCases\EditPagesTest.class
 teseCases\EditDatabaseListingTest.class
+teseCases\CreateIndexEntriesPageTestPage.class
 teseCases\CreateResourceFlowTestPage.class
 teseCases\DeletePagesTest.class
+teseCases\DeleteIndexEntryPageTest.class
 teseCases\DeleteDirectoryListingTest.class
 teseCases\EditCustomBlockTest.class
+teseCases\EditIndexEntryTest.class
 teseCases\CreateDataBaseListingsTestPage.class
+teseCases\CreateReservesTestPage.class
 teseCases\CreateResearchGuidesTestPage.class
 teseCases\CreatePagesTestPage.class
 teseCases\DeleteDatabaseListingTest.class
@@ -18,6 +26,7 @@ teseCases\DeleteResourceFlowTest.class
 teseCases\CreateCustomBlockTestPage.class
 teseCases\EditResearchGuidesTest.class
 teseCases\EditDirectoryListingsTest.class
+teseCases\CreateIndexPageTestPage.class
 teseCases\DeleteNewsArticleTest.class
 teseCases\EditResourceFlowsTest.class
 teseCases\DeleteResearchGuideTest.class

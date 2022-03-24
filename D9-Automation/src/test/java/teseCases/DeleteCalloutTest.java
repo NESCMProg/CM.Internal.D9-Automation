@@ -77,7 +77,7 @@ public class DeleteCalloutTest extends base {
 	
 	@Test(dataProvider="getdeleteData")
 	public void deleteTest(String title1_D, String deleteCalloutTitle) {
-		Log.info("Test Case ID: TS_CO_02");
+		Log.info("Test Case ID: TS_CO_03");
 		Log.info("Test Designed By: Charan");
 		Log.info("Test Priority: High");
 		Log.info("Module Name: Callouts");
@@ -92,7 +92,7 @@ public class DeleteCalloutTest extends base {
 			Log.info("'"+deleteCalloutTitle+"'"+" is deleted successfully");
 		}
 		catch(Exception e1) {
-			
+			Log.error("Failed to Delete: "+deleteCalloutTitle);
 		}
 		
 		Log.info("Test Result: Pass");

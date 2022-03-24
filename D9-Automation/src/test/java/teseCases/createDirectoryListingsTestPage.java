@@ -92,12 +92,12 @@ public class createDirectoryListingsTestPage extends base {
 		Log.info("Test Priority: High");
 		Log.info("Test Executed By: "+machineName );
 		Log.info("Test Executed Date: " + currentDateTime);
-		Log.info("Test Description: Navigate to 'Directory Listings' Page in Directory Listings Tile. Click on [Add New] button to create a new Directory."
+		Log.info("Test Description: Navigate to 'Directory Listings' Page in Directory Listings Tile. Click on [Add directory listings] button to create a new Directory."
 				+ " Page navigates to 'Create Directory Listing' page. Fill the details and click on [Save] button. "
 				+ "New Directory is created with respective Title name and can be viewed in Directory Listings table grid.");
 		dlvp.clickDirectoryNewandSaveBtn(dirName, secondtName, job, loc, C_Linkedin, C_LinkedinText);
 		Log.info("Condition in Test Scenario Id: TS_DL_01 is Executed Successfully");
-		Log.info("Test Result: Pass");
+		
 
 	}
 

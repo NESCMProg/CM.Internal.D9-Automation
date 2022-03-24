@@ -60,29 +60,59 @@ public class directoryListingsViewPage extends base {
 	@FindBy(xpath="//input[@value='Delete']")
 	WebElement directoryListingDelete;
 	
+	@FindBy(xpath="//div[@role='contentinfo']/div[2]")
+	WebElement savedDLStatus;
+	
+	@FindBy(xpath="//div[@class='messages__content']")
+	WebElement createMethodErrors;
+	
+	//@FindBy(css="div.form-item__error-message")
+	//WebElement fieldValidation;
+	
+	//@FindBy(xpath="(//div[@class='form-item__error-message'])[2]")
+	//WebElement lastNameValiadation;
+	
 	public directoryListingsViewPage() {
 		PageFactory.initElements(driver, this);
 	}
 	
 	public void clickDirectoryNewandSaveBtn(String dirName, String secondtName, String job, String loc, String C_Linkedin, String C_LinkedinText) throws InterruptedException {
-		addNewDirectory.click();
-		directoryName.sendKeys(dirName);
-		lastName.sendKeys(secondtName);
-		jobTitle.sendKeys(job);
-		Location.sendKeys(loc);
-		Thread.sleep(1000);
-		linkedinURL.sendKeys(C_Linkedin);
-		linkedinText.sendKeys(C_LinkedinText);
 		try {
+			addNewDirectory.click();
+			directoryName.sendKeys(dirName);
+			lastName.sendKeys(secondtName);
+			jobTitle.sendKeys(job);
+			Location.sendKeys(loc);
+			Thread.sleep(1000);
+			linkedinURL.sendKeys(C_Linkedin);
+			linkedinText.sendKeys(C_LinkedinText);
 			submitBtn.click();
+			Thread.sleep(1000);
 			Log.info("clicked on SAVE button after providing details");
+			String DL_Msg = savedDLStatus.getText();
+			Log.info("Status Message: "+DL_Msg);
+			Log.info("Directory List saved with Title name: '"+dirName+" "+secondtName+"'");
+			Log.info("Test Result: Pass");
 		}
-		catch(Exception e) {
-			//Log.error("Unable to find SAVE button after providing details");
+		catch(Exception e1) {
+			String headerWarning = createMethodErrors.getText();
+			Log.error("Error Message: "+headerWarning);
+			
+			int fieldMSG = driver.findElements(By.xpath("//div[@class='form-item__error-message']")).size();
+			for(int i=1; i<=fieldMSG;i++) {
+				try {
+					String alerts = driver.findElement(By.xpath("//div[@class='form-item__error-message']["+i+"]")).getText();
+					Log.error("Field Message: "+alerts);
+				}
+				catch(Exception e2) {
+					String alertsSecond = driver.findElement(By.xpath("//div[contains(text(),'Last name/Secondary name field is required.')]")).getText();
+					Log.error("Field Message: "+alertsSecond);
+				}
+			}
+			Log.error("Directory Listing is not created: "+dirName+" "+secondtName);
+			Log.info("Test Result: Fail to create a Directory List, since mandatory field not provided");
 		}
 		
-		System.out.println("Directory List is saved");
-		Log.info("Directory List saved with Title name: "+dirName);
 	}
 
 	public void searchDirectoryListTitle(String InputDirTitle1 ,String InputDirTitle2,  String E_FirstName, String E_lastName, String E_jobTitle, String E_Location, String E_LinkedinURL, String E_LinkedinText) {
