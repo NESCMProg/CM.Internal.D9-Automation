@@ -84,7 +84,12 @@ public class researchGuidesViewPage extends base {
 		catch(Exception e1) {
 			
 		}
-		researchTitle.sendKeys(C_researchTitle);
+		try{
+			researchTitle.sendKeys(C_researchTitle);
+		}
+		catch(Exception e2){
+		}
+		
 		researchType.click();
 		Select termRG = new Select(researchType);
 		termRG.selectByVisibleText(C_termRG);
