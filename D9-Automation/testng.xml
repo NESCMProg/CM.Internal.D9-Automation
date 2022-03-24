@@ -30,15 +30,9 @@
 			<class name="teseCases.CreatePagesTestPage" />
 			<class name="teseCases.EditPagesTest" />
 			<class name="teseCases.DeletePagesTest" />
-			<class name="teseCases.CreatePagesTestPage" />
-			<class name="teseCases.EditPagesTest" />
-			<class name="teseCases.DeletePagesTest" />
 			<class name="teseCases.CreateResearchGuidesTestPage" />
-			<class name="teseCases.EditPagesTest" />
-			<class name="teseCases.DeletePagesTest" />
-			<class name="teseCases.CreateResearchGuidesTestPage" />
-			<class name="teseCases.EditPagesTest" />
-			<class name="teseCases.DeletePagesTest" />
+			<class name="teseCases.EditResearchGuidesTest" />
+			<class name="teseCases.DeleteResearchGuideTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
