@@ -23,56 +23,54 @@ import utility.TestUtil;
 import utility.readCredentials;
 
 public class DeleteIndexPageTest extends base {
-	LoginPatron loginpatron	;
+	LoginPatron loginpatron;
 	HomePage hp;
 	DashboardPage dashboardpage;
 	indexDashboardPage ixdp;
 	indexPagesViewPage ipvp;
 	DeleteIndexPageTest delindexpage;
 	readCredentials rc = new readCredentials();
-	
+
 	public DeleteIndexPageTest() {
 		super();
 	}
-	
+
 	@BeforeMethod
 	public void setUp() throws IOException, InterruptedException {
 		initialization();
 		Log.info("Browser is opened");
 		Log.info("Test functionality to delete an Index Page");
-		 driver.manage().timeouts().pageLoadTimeout(10,TimeUnit.SECONDS);
-		 loginpatron = new LoginPatron();
-		 String username1 = rc.ReadCellData(1,0);
-		String password1 = rc.ReadCellData(1,1);
-		 hp = new HomePage();
-		hp =  loginpatron.login(username1,password1);
-		 dashboardpage = new DashboardPage();
-		 dashboardpage = hp.clickOnDashboardLink();
-		 ixdp = new indexDashboardPage();
+		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+		loginpatron = new LoginPatron();
+		String username1 = rc.ReadCellData(1, 0);
+		String password1 = rc.ReadCellData(1, 1);
+		hp = new HomePage();
+		hp = loginpatron.login(username1, password1);
+		dashboardpage = new DashboardPage();
+		dashboardpage = hp.clickOnDashboardLink();
+		ixdp = new indexDashboardPage();
 		ixdp = dashboardpage.clickOnIndexPagesLink();
-		 ipvp = new indexPagesViewPage();
-		ipvp =  ixdp.clickOnDashToIndexPage();
+		ipvp = new indexPagesViewPage();
+		ipvp = ixdp.clickOnDashToIndexPage();
 	}
-	
+
 	@DataProvider
-	public Object[][] getLoginData()
-	{
-		
-		Object data[][]=null;
+	public Object[][] getLoginData() {
+
+		Object data[][] = null;
 		try {
 			data = TestUtil.getTestData("login");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		} 
-		
+		}
+
 		return data;
 	}
-	
+
 	@DataProvider
-	public Object[][] getdeleteIndexPageData()
-	{
-		Object data[][]=null;
+	public Object[][] getdeleteIndexPageData() {
+		Object data[][] = null;
 		try {
 			data = TestUtil.getTestData("deleteindexpage");
 		} catch (Exception e) {
@@ -80,56 +78,40 @@ public class DeleteIndexPageTest extends base {
 		}
 		return data;
 	}
-	
-	@Test(dataProvider="getdeleteIndexPageData")
+
+	@Test(dataProvider = "getdeleteIndexPageData")
 	public void deleteTest(String D_indexPageTitle, String D_Languauge, String deletedIndexTitle) {
 		Log.info("Test Case ID: TS_IIP_03");
 		Log.info("Test Designed By: Charan");
 		Log.info("Test Priority: High");
 		Log.info("Module Name: Index Page");
-		Log.info("Test Executed By: "+machineName );
-		Log.info("Test Executed Date: "+currentDateTime);
-		Log.info("Test Description: To navigate to Index Pages Tile, click on Index Page tile in dashboard. Two tiles present, namely - [Index Page], [Index Entry]. Again click on [Index Page] tile to view 'Index Pages' page."
-				+" Create a new Index Page and then again identify the Index Page Title from search bar. Then delete the following Index Page");
-		
+		Log.info("Test Executed By: " + machineName);
+		Log.info("Test Executed Date: " + currentDateTime);
+		Log.info(
+				"Test Description: To navigate to Index Pages Tile, click on Index Page tile in dashboard. Two tiles present, namely - [Index Page], [Index Entry]. Again click on [Index Page] tile to view 'Index Pages' page."
+						+ " Create a new Index Page and then again identify the Index Page Title from search bar. Then delete the following Index Page");
+
 		try {
 			ipvp.deleteIndexPageBtn(D_indexPageTitle, D_Languauge, deletedIndexTitle);
-			Log.info("'"+D_indexPageTitle+"'"+ " is created first");
-			Log.info("'"+deletedIndexTitle+"'"+" is deleted successfully");
+			Log.info("'" + D_indexPageTitle + "'" + " is created first");
+			Log.info("'" + deletedIndexTitle + "'" + " is deleted successfully");
+		} catch (Exception e1) {
+			Log.error("Failed to Delete: " + deletedIndexTitle);
 		}
-		catch(Exception e1) {
-			Log.error("Failed to Delete: "+deletedIndexTitle);
-		}
-		
+
 		Log.info("Test Result: Pass");
 		System.out.println("For Deletetion, deleteIndexPageBtn method is implemented");
 	}
-	
+
 	@AfterMethod
 	public void teardown() {
 		driver.quit();
 		try {
 			Log.info("Browser is closed");
-		}
-		catch(Exception e) {
+		} catch (Exception e) {
 			Log.error(e.getMessage());
 		}
-		
-	}
-	
-}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 
+	}
+
+}

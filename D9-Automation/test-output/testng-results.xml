@@ -1,43 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-23T20:58:32 IST" name="Default suite" finished-at="2022-03-23T21:00:34 IST" duration-ms="121883">
+  <suite started-at="2022-04-28T13:50:31 IST" name="Default suite" finished-at="2022-04-28T13:50:59 IST" duration-ms="27769">
     <groups>
     </groups>
-    <test started-at="2022-03-23T20:58:32 IST" name="Default test" finished-at="2022-03-23T21:00:34 IST" duration-ms="121883">
-      <class name="teseCases.CreateCalloutTestPage">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:teseCases.CreateCalloutTestPage@6a400542]" started-at="2022-03-23T20:58:33 IST" name="setUp" finished-at="2022-03-23T20:59:23 IST" duration-ms="50012" status="PASS">
+    <test started-at="2022-04-28T13:50:31 IST" name="Default test" finished-at="2022-04-28T13:50:59 IST" duration-ms="27769">
+      <class name="teseCases.EditResearchGuidesTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:teseCases.EditResearchGuidesTest@7c729a55]" started-at="2022-04-28T13:50:31 IST" name="setUp" finished-at="2022-04-28T13:50:49 IST" duration-ms="17822" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="newcalloutcreatetest(java.lang.String)[pri:0, instance:teseCases.CreateCalloutTestPage@6a400542]" started-at="2022-03-23T20:59:23 IST" name="newcalloutcreatetest" data-provider="getCalloutData" finished-at="2022-03-23T20:59:36 IST" duration-ms="12925" status="PASS">
+        <test-method signature="provideResearchGuideTitleTitle(java.lang.String,java.lang.String)[pri:1, instance:teseCases.EditResearchGuidesTest@7c729a55]" started-at="2022-04-28T13:50:49 IST" name="provideResearchGuideTitleTitle" data-provider="InputResearchGuideData" finished-at="2022-04-28T13:50:58 IST" duration-ms="9219" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Excel Callouts-1]]>
+                <![CDATA[Corpus Limited]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Cinahal-E]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- newcalloutcreatetest -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:teseCases.CreateCalloutTestPage@6a400542]" started-at="2022-03-23T20:59:36 IST" name="setUp" finished-at="2022-03-23T20:59:59 IST" duration-ms="22884" status="PASS">
+        </test-method> <!-- provideResearchGuideTitleTitle -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:teseCases.EditResearchGuidesTest@7c729a55]" started-at="2022-04-28T13:50:58 IST" name="teardown" finished-at="2022-04-28T13:50:59 IST" duration-ms="201" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="newcalloutcreatetest(java.lang.String)[pri:0, instance:teseCases.CreateCalloutTestPage@6a400542]" started-at="2022-03-23T20:59:59 IST" name="newcalloutcreatetest" data-provider="getCalloutData" finished-at="2022-03-23T21:00:34 IST" duration-ms="35239" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[    ]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- newcalloutcreatetest -->
-      </class> <!-- teseCases.CreateCalloutTestPage -->
+        </test-method> <!-- teardown -->
+      </class> <!-- teseCases.EditResearchGuidesTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

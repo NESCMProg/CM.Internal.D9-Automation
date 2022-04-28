@@ -20,53 +20,51 @@ import utility.TestUtil;
 import utility.readCredentials;
 
 public class DeleteCalloutTest extends base {
-	LoginPatron loginpatron	;
+	LoginPatron loginpatron;
 	HomePage hp;
 	DashboardPage dashboardpage;
 	calloutViewPage covp;
 	DeleteCalloutTest delcallout;
 	readCredentials rc = new readCredentials();
-	
+
 	public DeleteCalloutTest() {
 		super();
 	}
-	
+
 	@BeforeMethod
 	public void setUp() throws IOException, InterruptedException {
 		initialization();
 		Log.info("Browser is opened");
 		Log.info("Test functionality to delete callout");
-		 driver.manage().timeouts().pageLoadTimeout(10,TimeUnit.SECONDS);
-		 loginpatron = new LoginPatron();
-		 String username1 = rc.ReadCellData(1,0);
-		String password1 = rc.ReadCellData(1,1);
-		 hp = new HomePage();
-		hp =  loginpatron.login(username1,password1);
-		 dashboardpage = new DashboardPage();
-		 dashboardpage = hp.clickOnDashboardLink();
-		 covp = new calloutViewPage();
-		 covp = dashboardpage.clickOnCalloutsLink();
+		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+		loginpatron = new LoginPatron();
+		String username1 = rc.ReadCellData(1, 0);
+		String password1 = rc.ReadCellData(1, 1);
+		hp = new HomePage();
+		hp = loginpatron.login(username1, password1);
+		dashboardpage = new DashboardPage();
+		dashboardpage = hp.clickOnDashboardLink();
+		covp = new calloutViewPage();
+		covp = dashboardpage.clickOnCalloutsLink();
 	}
-	
+
 	@DataProvider
-	public Object[][] getLoginData()
-	{
-		
-		Object data[][]=null;
+	public Object[][] getLoginData() {
+
+		Object data[][] = null;
 		try {
 			data = TestUtil.getTestData("login");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		} 
-		
+		}
+
 		return data;
 	}
-	
+
 	@DataProvider
-	public Object[][] getdeleteData()
-	{
-		Object data[][]=null;
+	public Object[][] getdeleteData() {
+		Object data[][] = null;
 		try {
 			data = TestUtil.getTestData("deletecallout");
 		} catch (Exception e) {
@@ -74,56 +72,40 @@ public class DeleteCalloutTest extends base {
 		}
 		return data;
 	}
-	
-	@Test(dataProvider="getdeleteData")
+
+	@Test(dataProvider = "getdeleteData")
 	public void deleteTest(String title1_D, String deleteCalloutTitle) {
 		Log.info("Test Case ID: TS_CO_03");
 		Log.info("Test Designed By: Charan");
 		Log.info("Test Priority: High");
 		Log.info("Module Name: Callouts");
-		Log.info("Test Executed By: "+machineName );
-		Log.info("Test Executed Date: "+currentDateTime);
-		Log.info("Test Description: Log in to EBSCO Enterprise Research application to create a callout first. Then identify the created ones in callout"
-				+" table and delete the following callout");
-		
+		Log.info("Test Executed By: " + machineName);
+		Log.info("Test Executed Date: " + currentDateTime);
+		Log.info(
+				"Test Description: Log in to EBSCO Enterprise Research application to create a callout first. Then identify the created ones in callout"
+						+ " table and delete the following callout");
+
 		try {
 			covp.deleteCalloutBtn(title1_D, deleteCalloutTitle);
-			Log.info("'"+title1_D+"'"+"callout is created first");
-			Log.info("'"+deleteCalloutTitle+"'"+" is deleted successfully");
+			Log.info("'" + title1_D + "'" + "callout is created first");
+			Log.info("'" + deleteCalloutTitle + "'" + " is deleted successfully");
+		} catch (Exception e1) {
+			Log.error("Failed to Delete: " + deleteCalloutTitle);
 		}
-		catch(Exception e1) {
-			Log.error("Failed to Delete: "+deleteCalloutTitle);
-		}
-		
+
 		Log.info("Test Result: Pass");
 		System.out.println("For Deletetion, deleteCalloutBtn method is implemented");
 	}
-	
+
 	@AfterMethod
 	public void teardown() {
 		driver.quit();
 		try {
 			Log.info("Browser is closed");
-		}
-		catch(Exception e) {
+		} catch (Exception e) {
 			Log.error(e.getMessage());
 		}
-		
-	}
-	
-}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 
+	}
+
+}

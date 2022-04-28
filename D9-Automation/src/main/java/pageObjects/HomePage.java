@@ -17,10 +17,11 @@ public class HomePage extends base{
 		PageFactory.initElements(driver, this);	
 	}
 	
-	public DashboardPage clickOnDashboardLink() {
+	public DashboardPage clickOnDashboardLink() throws InterruptedException {
+		Thread.sleep(1000);
 		dashboardLink.click();
 		return new DashboardPage();
 	}
 	
 	
-}
+}	

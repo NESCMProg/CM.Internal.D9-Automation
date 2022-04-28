@@ -42,12 +42,13 @@ public class EditResearchGuidesTest extends base {
 		initialization();
 		Log.info("Browser opened");
 		Log.info("Research Guide Edit Functionality");
-		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		loginpatron = new LoginPatron();
 		String username1 = rc.ReadCellData(1, 0);
 		String password1 = rc.ReadCellData(1, 1);
 		hp = new HomePage();
 		hp = loginpatron.login(username1, password1);
+		Thread.sleep(1000);
 		dashboardpage = new DashboardPage();
 		dashboardpage = hp.clickOnDashboardLink();
 		rgvp = new researchGuidesViewPage();

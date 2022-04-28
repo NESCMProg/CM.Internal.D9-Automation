@@ -68,7 +68,7 @@ HomePage hp;
 	}*/
 	
 	@Test(dataProvider="getLoginData", priority=1)
-	public void loginTest(String username, String password)
+	public void loginTest(String username, String password) throws InterruptedException
 	{
 		Log.info("Test Case ID: TS_LP_01");
 		Log.info("Test Designed By: Charan");

@@ -11,17 +11,20 @@ import utility.Log;
 
 public class LoginPatron extends base {						
 	//Page Factory
-	@FindBy(id="edit-name")
+	@FindBy(css="#edit-name")
 	WebElement username;
 	
-	@FindBy(id="edit-pass")
+	@FindBy(css="#edit-pass")
 	WebElement password;
 	
-	@FindBy(id="edit-submit")
+	@FindBy(css="#edit-submit")
 	WebElement LoginBtn;
 	
 	@FindBy(xpath="//input[@id='edit-search-form-eds-search-bar-container-query']")
 	WebElement pageSearchBar;
+	
+	@FindBy(xpath="//a[contains(text(),'Dashboard')]")
+	WebElement viewDashboard;
 	
 	@FindBy(xpath="//h2[contains(text(),'Error message')]")
 	WebElement errormessage;
@@ -53,16 +56,22 @@ public boolean validatesingleError() {
 	return elementerror.isDisplayed();
 }
 
-public HomePage login(String un, String pwd) {
-
+public HomePage login(String un, String pwd) throws InterruptedException {
+	
+	//username.clear();
 	username.sendKeys(un);
 	Log.info("User Name: " +un);
-	LoginBtn.click();
+	//LoginBtn.click();
+	//password.clear();
 	password.sendKeys(pwd);
 	Log.info("Password: "+pwd);
+	Thread.sleep(1000);
 	LoginBtn.click();
+	System.out.println("clicked login btn");
 	try {
-		pageSearchBar.click();
+		String viewDashboardLink = viewDashboard.getText();
+		Log.info(viewDashboardLink);
+		//pageSearchBar.click();
 		Log.info("Application is accessed with correct credentials");
 		Log.info("Navigated to Home page");
 	}

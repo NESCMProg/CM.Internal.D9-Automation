@@ -20,10 +20,10 @@ public class DashboardPage extends base {
 	@FindBy(linkText= "Resource Flows")
 	WebElement resourceFlowLink;
 	
-	@FindBy(linkText= "News articles")
+	@FindBy(xpath="//div[@data-id='ds-50000-news-articles-stacks-dashboardtilesstacks-news']/div[1]/h4/a")
 	WebElement newsArticlesLink;
 	
-	@FindBy(linkText= "Database listings")
+	@FindBy(xpath="//div[@data-id='ds-50000-database-listings-stacks-dashboardtilesstacks-databases']/div[1]/h4/a")
 	WebElement databaseListingsLink;
 	
 	@FindBy(linkText= "Directory listings")
@@ -70,8 +70,9 @@ public class DashboardPage extends base {
 		return new CustomBlockViewPage();
 	}
 	
-	public  NewsArticleViewPage clickOnNewsArticlesLink() {
+	public  NewsArticleViewPage clickOnNewsArticlesLink() throws InterruptedException {
 		System.out.println("This is dashboard page inside POM");
+		Thread.sleep(1000);
 		newsArticlesLink.click();
 		return new NewsArticleViewPage() ;
 	}

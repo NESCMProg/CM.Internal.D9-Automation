@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="teseCases.CreateNewsArticlesTestPage">
+      <class name="teseCases.CreateResearchGuidesTestPage">
         <methods>
+          <include name="newResearchGuideTest" invocation-numbers="0"/>
           <include name="setUp"/>
-          <include name="newArticleCreateTest" invocation-numbers="0"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- teseCases.CreateNewsArticlesTestPage -->
+      </class> <!-- teseCases.CreateResearchGuidesTestPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

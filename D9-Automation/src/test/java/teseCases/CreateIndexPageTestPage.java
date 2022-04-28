@@ -46,6 +46,7 @@ public class CreateIndexPageTestPage extends base {
 		loginpatron = new LoginPatron();
 		String username1 = rc.ReadCellData(1, 0);
 		String password1 = rc.ReadCellData(1, 1);
+		Thread.sleep(1000);
 		hp = new HomePage();
 		hp = loginpatron.login(username1, password1);
 		dashboardpage = new DashboardPage();
@@ -54,7 +55,7 @@ public class CreateIndexPageTestPage extends base {
 		ixdp = dashboardpage.clickOnIndexPagesLink();
 		ipvp = new indexPagesViewPage();
 		ipvp = ixdp.clickOnDashToIndexPage();
-		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 
 	}
 

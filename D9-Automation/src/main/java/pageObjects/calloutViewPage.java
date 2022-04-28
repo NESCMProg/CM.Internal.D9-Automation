@@ -18,7 +18,7 @@ public class calloutViewPage extends base{
 	@FindBy(xpath="//h1[contains(text(),'Callouts')]")
 	WebElement calloutsLabel;
 	
-	@FindBy(xpath="//a[contains(text(),'Add callout')]")
+	@FindBy(linkText="Add callout")
 	WebElement addNewCallout;
 	
 	@FindBy(xpath="//input[@id='edit-title-0-value']")
@@ -60,7 +60,7 @@ public class calloutViewPage extends base{
 	@FindBy(xpath="//input[@value='Delete']")
 	WebElement calloutDelete;
 	
-	@FindBy(xpath="//body/div[2]/div[1]/main[1]/div[2]/div[2]/div[1]/div[2]")
+	@FindBy(xpath="//main[@class='page-content clearfix']/div[2]/div[@class='messages-list']/div[1]/div[2]")
 	WebElement successfulCalloutMsg;
 	
 	@FindBy(css="div.messages__content")
@@ -80,18 +80,16 @@ public class calloutViewPage extends base{
 	
 	
 	public void  clickonNewBtnandSaveBtn(String Callouttitle1) throws InterruptedException{
-	
 			addNewCallout.click();
 			title.sendKeys(Callouttitle1);
 			//wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//input[@id='edit-submit']")));
 			try {
 				submitBtn.click();
 				Thread.sleep(1000);
-				Log.info("clicked on SAVE button after providing details");
-				Thread.sleep(2000);
-				String COMsg = successfulCalloutMsg.getText();
-				Log.info("Status message: "+COMsg);
+				searchBox.click();
 				Log.info("Callout created with Title name: "+Callouttitle1);
+				Log.info("Callouts "+Callouttitle1+" has been created.");
+				searchBtn.click();
 				Log.info("Test Result: Pass");
 			}
 			catch(Exception e) {

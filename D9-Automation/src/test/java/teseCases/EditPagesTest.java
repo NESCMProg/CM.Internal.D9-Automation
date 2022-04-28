@@ -46,6 +46,7 @@ public class EditPagesTest extends base {
 		String password1 = rc.ReadCellData(1, 1);
 		hp = new HomePage();
 		hp = loginpatron.login(username1, password1);
+		Thread.sleep(1000);
 		dashboardpage = new DashboardPage();
 		dashboardpage = hp.clickOnDashboardLink();
 		pvp = new pagesViewPage();

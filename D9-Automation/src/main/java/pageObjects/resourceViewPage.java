@@ -55,23 +55,23 @@ public class resourceViewPage extends base {
 
 	@FindBy(xpath = "//tbody/tr[1]/td[7]/div[1]/div[1]/ul[1]/li[1]/a[1]")
 	WebElement TracedEditBtn;
-	
-	@FindBy(xpath="//tbody/tr[1]/td[7]/div[1]/div[1]/ul[1]/li[2]/button[1]")
+
+	@FindBy(xpath = "//tbody/tr[1]/td[7]/div[1]/div[1]/ul[1]/li[2]/button[1]")
 	WebElement TraceDeleteBtnArrow;
 
 	@FindBy(xpath = "//input[@value='Delete']")
 	WebElement resourceFlowDelete;
-	
-	@FindBy(css="div.messages__content")
+
+	@FindBy(css = "div.messages__content")
 	WebElement createMethodSuccess;
-	
-	@FindBy(xpath="//h1[contains(text(),'Resource Flows')]")
-	 WebElement viewPageTitle;
-	
-	@FindBy(xpath="//body/div[2]/div[1]/main[1]/div[2]/div[2]/div[1]/div[1]/div[2]")
+
+	@FindBy(xpath = "//h1[contains(text(),'Resource Flows')]")
+	WebElement viewPageTitle;
+
+	@FindBy(xpath = "//body/div[2]/div[1]/main[1]/div[2]/div[2]/div[1]/div[1]/div[2]")
 	WebElement titleValidationError;
-	
-	@FindBy(css="div.form-item__error-message")
+
+	@FindBy(css = "div.form-item__error-message")
 	WebElement fieldError;
 
 	public resourceViewPage() {
@@ -89,23 +89,23 @@ public class resourceViewPage extends base {
 			submitBtn.click();
 			Thread.sleep(1000);
 			String RFPageTitle = viewPageTitle.getText();
-			Log.info("Page Title: "+RFPageTitle);
-			Thread.sleep(2000);
+			Log.info("Page Title: " + RFPageTitle);
+			Thread.sleep(1000);
 			String RF_MSG = createMethodSuccess.getText();
-			Log.info("Status Message: "+RF_MSG);
+			Log.info("Status Message: " + RF_MSG);
 			Log.info("Test Result: Pass");
 		} catch (Exception e) {
 			String titleWarning = titleValidationError.getText();
-			Log.error("Error Message: "+titleWarning);
+			Log.error("Error Message: " + titleWarning);
 			String elementError = fieldError.getText();
-			Log.error("Field Message: "+elementError);
+			Log.error("Field Message: " + elementError);
 			Log.error("Test Result: Fail to create a Resource Flow, since mandatory field not provided");
 		}
 
-
 	}
 
-	public void searchResourceTitle(String existingTitle, String EditedTitle, String E_UPC1, String E_title1, String E_author1) {
+	public void searchResourceTitle(String existingTitle, String EditedTitle, String E_UPC1, String E_title1,
+			String E_author1) {
 		try {
 			searchBox.sendKeys(existingTitle);
 			searchBtn.click();
@@ -134,8 +134,9 @@ public class resourceViewPage extends base {
 		}
 
 	}
-	
-	public void deleteResourceFlowBtn(String mainResourceTitle, String upc_1, String rtitle11, String author1, String deleteResourceTitle) throws InterruptedException {
+
+	public void deleteResourceFlowBtn(String mainResourceTitle, String upc_1, String rtitle11, String author1,
+			String deleteResourceTitle) throws InterruptedException {
 		addNewResource.click();
 		resourceTitle.sendKeys(mainResourceTitle);
 		UPC.sendKeys(upc_1);
@@ -145,25 +146,22 @@ public class resourceViewPage extends base {
 		try {
 			submitBtn.click();
 			Log.info("Resource Flow is created");
-		}
-		catch(Exception e) {
+		} catch (Exception e) {
 			Log.error("Unable to get status message, but Resource Flow is created");
 		}
 		Thread.sleep(1000);
 		searchBox.sendKeys(deleteResourceTitle);
 		searchBtn.click();
 		TraceDeleteBtnArrow.click();
-		List<WebElement>options=driver.findElements(By.xpath("//tbody/tr[1]/td[7]/div[1]/div[1]/ul[1]/li"));
-		for(WebElement opt: options) {
+		List<WebElement> options = driver.findElements(By.xpath("//tbody/tr[1]/td[7]/div[1]/div[1]/ul[1]/li"));
+		for (WebElement opt : options) {
 			if (opt.getText().equals("Delete")) {
 				opt.click();
 			}
 		}
 		resourceFlowDelete.click();
 		System.out.println("Resource Flow is deleted");
-		
-		
-		
+
 	}
-	
+
 }

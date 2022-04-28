@@ -58,7 +58,7 @@ public class indexPagesViewPage extends base{
 	@FindBy(xpath="//h1[contains(text(),'Index Pages')]")
 	 WebElement viewPageTitle;
 	
-	@FindBy(xpath="//body/div[2]/div[1]/main[1]/div[2]/div[2]/div[1]/div[2]")
+	@FindBy(xpath="//main[@class='page-content clearfix']/div[2]/div[@class='messages-list']/div[1]/div[2]")
 	WebElement createMethodSuccess;
 	
 	@FindBy(xpath="//body/div[2]/div[1]/main[1]/div[2]/div[2]/div[1]/div[1]/div[2]")
@@ -79,9 +79,9 @@ public class indexPagesViewPage extends base{
 		try {
 			submitBtn.click();
 			Thread.sleep(1000);
+			searchBox.click();
 			String IE_PageTitle = viewPageTitle.getText();
 			Log.info("Page Title: "+IE_PageTitle);
-			Thread.sleep(2000);
 			String IE_MSG = createMethodSuccess.getText();
 			Log.info("Status Message: "+IE_MSG);
 		}
@@ -90,7 +90,7 @@ public class indexPagesViewPage extends base{
 			Log.error("Error Message: "+titleWarning);
 			String elementError = fieldError.getText();
 			Log.error("Field Message: "+elementError);
-			Log.error("Test Result: Fail");
+			Log.error("Test Result: Fail to create a Index Page, since mandatory field not provided");
 		}
 		
 	

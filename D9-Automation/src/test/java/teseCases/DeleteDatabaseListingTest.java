@@ -22,53 +22,51 @@ import utility.TestUtil;
 import utility.readCredentials;
 
 public class DeleteDatabaseListingTest extends base {
-	LoginPatron loginpatron	;
+	LoginPatron loginpatron;
 	HomePage hp;
 	DashboardPage dashboardpage;
 	DataBaseListingsViewPage dblvp;
 	DeleteDatabaseListingTest deletedatabaselist;
 	readCredentials rc = new readCredentials();
-	
+
 	public DeleteDatabaseListingTest() {
 		super();
 	}
-	
+
 	@BeforeMethod
 	public void setUp() throws IOException, InterruptedException {
 		initialization();
 		Log.info("Browser is opened");
 		Log.info("Test functionality to delete a Database List");
-		driver.manage().timeouts().pageLoadTimeout(10,TimeUnit.SECONDS);
-		 loginpatron = new LoginPatron();
-		 String username1 = rc.ReadCellData(1,0);
-		String password1 = rc.ReadCellData(1,1);
+		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+		loginpatron = new LoginPatron();
+		String username1 = rc.ReadCellData(1, 0);
+		String password1 = rc.ReadCellData(1, 1);
 		hp = new HomePage();
-		hp =  loginpatron.login(username1,password1);
-		 dashboardpage = new DashboardPage();
-		 dashboardpage = hp.clickOnDashboardLink();
-		 dblvp = new DataBaseListingsViewPage();
-		 dashboardpage.clickOnDatabaseListingLink();
+		hp = loginpatron.login(username1, password1);
+		dashboardpage = new DashboardPage();
+		dashboardpage = hp.clickOnDashboardLink();
+		dblvp = new DataBaseListingsViewPage();
+		dashboardpage.clickOnDatabaseListingLink();
 	}
-	
+
 	@DataProvider
-	public Object[][] getLoginData()
-	{
-		
-		Object data[][]=null;
+	public Object[][] getLoginData() {
+
+		Object data[][] = null;
 		try {
 			data = TestUtil.getTestData("login");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		} 
-		
+		}
+
 		return data;
 	}
-	
+
 	@DataProvider
-	public Object[][] getdeleteDBLData()
-	{
-		Object data[][]=null;
+	public Object[][] getdeleteDBLData() {
+		Object data[][] = null;
 		try {
 			data = TestUtil.getTestData("deletedbl");
 		} catch (Exception e) {
@@ -76,55 +74,40 @@ public class DeleteDatabaseListingTest extends base {
 		}
 		return data;
 	}
-	
-	@Test(dataProvider="getdeleteDBLData")
-	public void deleteTest(String D_DBLTitle, String Main_URL1_D, String subURL1_D, String subLink1_D, String deleteDBLTitle) {
+
+	@Test(dataProvider = "getdeleteDBLData")
+	public void deleteTest(String D_DBLTitle, String Main_URL1_D, String subURL1_D, String subLink1_D,
+			String deleteDBLTitle) {
 		Log.info("Test Case ID: TS_DBL_03");
 		Log.info("Test Designed By: Charan");
 		Log.info("Test Priority: High");
 		Log.info("Module Name: Database Listing");
-		Log.info("Test Executed By: "+machineName );
-		Log.info("Test Executed Date: "+currentDateTime);
-		Log.info("Test Description: Log in to EBSCO Enterprise Research application to create a Database Listing first. Then identify the created ones in Database List"
-				+" table and delete the following Database List");
-		
+		Log.info("Test Executed By: " + machineName);
+		Log.info("Test Executed Date: " + currentDateTime);
+		Log.info(
+				"Test Description: Log in to EBSCO Enterprise Research application to create a Database Listing first. Then identify the created ones in Database List"
+						+ " table and delete the following Database List");
+
 		try {
 			dblvp.deleteDBLBtn(D_DBLTitle, Main_URL1_D, subURL1_D, subLink1_D, deleteDBLTitle);
-			Log.info("'"+D_DBLTitle+"'"+" Database List is created first");
-			Log.info("'"+deleteDBLTitle+"'" +" is deleted successfully");
+			Log.info("'" + D_DBLTitle + "'" + " Database List is created first");
+			Log.info("'" + deleteDBLTitle + "'" + " is deleted successfully");
+		} catch (Exception e1) {
+			Log.error("Failed to Delete: " + deleteDBLTitle);
 		}
-		catch(Exception e1) {
-			Log.error("Failed to Delete: "+deleteDBLTitle);
-		}
-		
+
 		Log.info("Test Result: Pass");
 	}
-	
+
 	@AfterMethod
 	public void teardown() {
 		driver.quit();
 		try {
 			Log.info("Browser is closed");
-		}
-		catch(Exception e) {
+		} catch (Exception e) {
 			Log.error(e.getMessage());
 		}
-		
-	}
-	
-}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 
+	}
+
+}

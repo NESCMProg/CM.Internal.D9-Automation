@@ -41,12 +41,13 @@ public class EditDirectoryListingsTest extends base {
 		initialization();
 		Log.info("Browser opened");
 		Log.info("Directory List Edit Functionality");
-		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		loginpatron = new LoginPatron();
 		String username1 = rc.ReadCellData(1, 0);
 		String password1 = rc.ReadCellData(1, 1);
 		hp = new HomePage();
 		hp = loginpatron.login(username1, password1);
+		Thread.sleep(1000);
 		dashboardpage = new DashboardPage();
 		dashboardpage = hp.clickOnDashboardLink();
 		dlvp = new directoryListingsViewPage();
@@ -116,7 +117,7 @@ public class EditDirectoryListingsTest extends base {
 	 */
 
 	@Test(dataProvider = "InputDirectoryListingsData", priority = 1)
-	public void provideDirectoryListTitle(String InputDirTitle1 ,String InputDirTitle2,  String E_FirstName, String E_lastName, String E_jobTitle, String E_Location, String E_LinkedinURL, String E_LinkedinText) {
+	public void provideDirectoryListTitle(String InputDirTitle1 ,String InputDirTitle2,  String E_FirstName, String E_lastName, String E_jobTitle, String E_Location) {
 		Log.info("Module Name: Directory Listings");
 		Log.info("Test Case ID: TS_DL_02");
 		Log.info("Test Designed By: Charan");
@@ -128,7 +129,7 @@ public class EditDirectoryListingsTest extends base {
 						+ " table grid, then edit the following Directory and save. If Directory is not present in table grid, user will be"
 						+ " informed no such Directory is present in this Directory Listings table grid"
 						+ " Note: Directory first name value is taken from Excel sheet : inputdirectory");
-		dlvp.searchDirectoryListTitle(InputDirTitle1, InputDirTitle2, E_FirstName, E_lastName, E_jobTitle, E_Location, E_LinkedinURL, E_LinkedinText);
+		dlvp.searchDirectoryListTitle(InputDirTitle1, InputDirTitle2, E_FirstName, E_lastName, E_jobTitle, E_Location);
 		Log.info("Test Result: Pass");
 		System.out.println(InputDirTitle1);
 	}

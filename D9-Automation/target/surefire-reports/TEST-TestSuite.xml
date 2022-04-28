@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="1,681.772" tests="38" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="2,135.056" tests="50" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="17.0.2+8-LTS-86"/>
@@ -26,7 +26,7 @@
     <property name="os.name" value="Windows 10"/>
     <property name="classworlds.conf" value="C:\Users\cchitneedi\Downloads\apache-maven-3.8.4\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-17.0.2\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\ssteam\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Adaptiva\AdaptivaClient\bin\x32;C:\Program Files (x86)\Adaptiva\AdaptivaClient\bin\x64;C:\Users\cchitneedi\Downloads\apache-maven-3.8.4\bin;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-17.0.2\bin;C:\Users\cchitneedi\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17.0.2\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\ssteam\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Adaptiva\AdaptivaClient\bin\x32;C:\Program Files (x86)\Adaptiva\AdaptivaClient\bin\x64;C:\Users\cchitneedi\Downloads\apache-maven-3.8.4\bin;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-17.0.2\bin;C:\Program Files\dotnet\;C:\Users\cchitneedi\AppData\Local\Microsoft\WindowsApps;;."/>
     <property name="maven.conf" value="C:\Users\cchitneedi\Downloads\apache-maven-3.8.4/conf"/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="61.0"/>
@@ -60,42 +60,54 @@
     <property name="sun.stdout.encoding" value="cp437"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="loginTest" classname="teseCases.LoginPageTest" time="6.931"/>
-  <testcase name="loginTest" classname="teseCases.LoginPageTest" time="30.303"/>
-  <testcase name="provideCalloutTitle" classname="teseCases.EditCalloutsTest" time="32.034"/>
-  <testcase name="deleteTest" classname="teseCases.DeleteCalloutTest" time="45.275"/>
-  <testcase name="newResourceFlowTest" classname="teseCases.CreateResourceFlowTestPage" time="13.87"/>
-  <testcase name="newResourceFlowTest" classname="teseCases.CreateResourceFlowTestPage" time="36.314"/>
-  <testcase name="provideResourceTitle" classname="teseCases.EditResourceFlowsTest" time="31.566"/>
-  <testcase name="deleteTest" classname="teseCases.DeleteResourceFlowTest" time="21.624"/>
-  <testcase name="newArticleCreateTest" classname="teseCases.CreateNewsArticlesTestPage" time="14.228"/>
-  <testcase name="newArticleCreateTest" classname="teseCases.CreateNewsArticlesTestPage" time="34.229"/>
-  <testcase name="provideNewsArticleTitle" classname="teseCases.EditNewsArticlesTest" time="31.515"/>
-  <testcase name="deleteTest" classname="teseCases.DeleteNewsArticleTest" time="41.394"/>
-  <testcase name="newCustomCreateTest" classname="teseCases.CreateCustomBlockTestPage" time="11.642"/>
-  <testcase name="newCustomCreateTest" classname="teseCases.CreateCustomBlockTestPage" time="36.389"/>
-  <testcase name="provideCustomBLockTitle" classname="teseCases.EditCustomBlockTest" time="31.417"/>
-  <testcase name="deleteTest" classname="teseCases.DeleteCustomTest" time="21.51"/>
-  <testcase name="newDBLCreateTest" classname="teseCases.CreateDataBaseListingsTestPage" time="9.452"/>
-  <testcase name="newDBLCreateTest" classname="teseCases.CreateDataBaseListingsTestPage" time="36.371"/>
-  <testcase name="provideDatabaseListTitle" classname="teseCases.EditDatabaseListingTest" time="32.786"/>
-  <testcase name="deleteTest" classname="teseCases.DeleteDatabaseListingTest" time="25.291"/>
-  <testcase name="newdirectorycreatetest" classname="teseCases.createDirectoryListingsTestPage" time="9.351"/>
-  <testcase name="newdirectorycreatetest" classname="teseCases.createDirectoryListingsTestPage" time="36.269"/>
-  <testcase name="newdirectorycreatetest" classname="teseCases.createDirectoryListingsTestPage" time="36.206"/>
-  <testcase name="newdirectorycreatetest" classname="teseCases.createDirectoryListingsTestPage" time="66.519"/>
-  <testcase name="provideDirectoryListTitle" classname="teseCases.EditDirectoryListingsTest" time="31.755"/>
-  <testcase name="deleteTest" classname="teseCases.DeleteDirectoryListingTest" time="19.262"/>
-  <testcase name="newReservesTest" classname="teseCases.CreateReservesTestPage" time="12.581"/>
-  <testcase name="newReservesTest" classname="teseCases.CreateReservesTestPage" time="42.375"/>
-  <testcase name="newReservesTest" classname="teseCases.CreateReservesTestPage" time="37.422"/>
-  <testcase name="newReservesTest" classname="teseCases.CreateReservesTestPage" time="67.276"/>
-  <testcase name="provideReservesTitle" classname="teseCases.EditReservesTest" time="31.935"/>
-  <testcase name="deleteReserveTest" classname="teseCases.DeleteReservesTest" time="18.11"/>
-  <testcase name="newPageCreateTest" classname="teseCases.CreatePagesTestPage" time="10.177"/>
-  <testcase name="newPageCreateTest" classname="teseCases.CreatePagesTestPage" time="39.663"/>
-  <testcase name="providePageTitle" classname="teseCases.EditPagesTest" time="31.866"/>
-  <testcase name="deletePageTest" classname="teseCases.DeletePagesTest" time="15.547"/>
-  <testcase name="newResearchGuideTest" classname="teseCases.CreateResearchGuidesTestPage" time="12.512"/>
-  <testcase name="newResearchGuideTest" classname="teseCases.CreateResearchGuidesTestPage" time="36.134"/>
+  <testcase name="loginTest" classname="teseCases.LoginPageTest" time="5.016"/>
+  <testcase name="loginTest" classname="teseCases.LoginPageTest" time="34.232"/>
+  <testcase name="deleteTest" classname="teseCases.DeleteCalloutTest" time="18.121"/>
+  <testcase name="newcalloutcreatetest" classname="teseCases.CreateCalloutTestPage" time="10.338"/>
+  <testcase name="newcalloutcreatetest" classname="teseCases.CreateCalloutTestPage" time="34.405"/>
+  <testcase name="provideCalloutTitle" classname="teseCases.EditCalloutsTest" time="8.876"/>
+  <testcase name="newCustomCreateTest" classname="teseCases.CreateCustomBlockTestPage" time="11.061"/>
+  <testcase name="newCustomCreateTest" classname="teseCases.CreateCustomBlockTestPage" time="36.148"/>
+  <testcase name="provideCustomBLockTitle" classname="teseCases.EditCustomBlockTest" time="9.001"/>
+  <testcase name="deleteTest" classname="teseCases.DeleteCustomTest" time="19.734"/>
+  <testcase name="newDBLCreateTest" classname="teseCases.CreateDataBaseListingsTestPage" time="10.633"/>
+  <testcase name="newDBLCreateTest" classname="teseCases.CreateDataBaseListingsTestPage" time="35.579"/>
+  <testcase name="provideDatabaseListTitle" classname="teseCases.EditDatabaseListingTest" time="33.465"/>
+  <testcase name="deleteTest" classname="teseCases.DeleteDatabaseListingTest" time="17.392"/>
+  <testcase name="newdirectorycreatetest" classname="teseCases.createDirectoryListingsTestPage" time="9.462"/>
+  <testcase name="newdirectorycreatetest" classname="teseCases.createDirectoryListingsTestPage" time="36.34"/>
+  <testcase name="newdirectorycreatetest" classname="teseCases.createDirectoryListingsTestPage" time="36.899"/>
+  <testcase name="newdirectorycreatetest" classname="teseCases.createDirectoryListingsTestPage" time="66.575"/>
+  <testcase name="provideDirectoryListTitle" classname="teseCases.EditDirectoryListingsTest" time="31.813"/>
+  <testcase name="deleteTest" classname="teseCases.DeleteDirectoryListingTest" time="22.67"/>
+  <testcase name="newIndexPagetest" classname="teseCases.CreateIndexEntriesPageTestPage" time="11.775"/>
+  <testcase name="newIndexPagetest" classname="teseCases.CreateIndexEntriesPageTestPage" time="34.46"/>
+  <testcase name="provideIndexPageTitle" classname="teseCases.EditIndexEntryTest" time="31.577"/>
+  <testcase name="deleteTest" classname="teseCases.DeleteIndexEntryPageTest" time="16.069"/>
+  <testcase name="newIndexPagetest" classname="teseCases.CreateIndexPageTestPage" time="16.875"/>
+  <testcase name="newIndexPagetest" classname="teseCases.CreateIndexPageTestPage" time="36.824"/>
+  <testcase name="provideIndexPageTitle" classname="teseCases.EditIndexPageTest" time="32.257"/>
+  <testcase name="deleteTest" classname="teseCases.DeleteIndexPageTest" time="23.318"/>
+  <testcase name="newArticleCreateTest" classname="teseCases.CreateNewsArticlesTestPage" time="19.975"/>
+  <testcase name="newArticleCreateTest" classname="teseCases.CreateNewsArticlesTestPage" time="3.436"/>
+  <testcase name="provideNewsArticleTitle" classname="teseCases.EditNewsArticlesTest" time="31.817"/>
+  <testcase name="deleteTest" classname="teseCases.DeleteNewsArticleTest" time="19.557"/>
+  <testcase name="newPageCreateTest" classname="teseCases.CreatePagesTestPage" time="9.812"/>
+  <testcase name="newPageCreateTest" classname="teseCases.CreatePagesTestPage" time="36.241"/>
+  <testcase name="providePageTitle" classname="teseCases.EditPagesTest" time="31.591"/>
+  <testcase name="deletePageTest" classname="teseCases.DeletePagesTest" time="15.87"/>
+  <testcase name="newResearchGuideTest" classname="teseCases.CreateResearchGuidesTestPage" time="12.081"/>
+  <testcase name="newResearchGuideTest" classname="teseCases.CreateResearchGuidesTestPage" time="35.627"/>
+  <testcase name="provideResearchGuideTitleTitle" classname="teseCases.EditResearchGuidesTest" time="31.865"/>
+  <testcase name="deleteResearchGuideTest" classname="teseCases.DeleteResearchGuideTest" time="17.376"/>
+  <testcase name="newReservesTest" classname="teseCases.CreateReservesTestPage" time="13.929"/>
+  <testcase name="newReservesTest" classname="teseCases.CreateReservesTestPage" time="38.369"/>
+  <testcase name="newReservesTest" classname="teseCases.CreateReservesTestPage" time="38.108"/>
+  <testcase name="newReservesTest" classname="teseCases.CreateReservesTestPage" time="68.397"/>
+  <testcase name="provideReservesTitle" classname="teseCases.EditReservesTest" time="31.422"/>
+  <testcase name="deleteReserveTest" classname="teseCases.DeleteReservesTest" time="17.788"/>
+  <testcase name="newResourceFlowTest" classname="teseCases.CreateResourceFlowTestPage" time="10.977"/>
+  <testcase name="newResourceFlowTest" classname="teseCases.CreateResourceFlowTestPage" time="34.534"/>
+  <testcase name="provideResourceTitle" classname="teseCases.EditResourceFlowsTest" time="31.541"/>
+  <testcase name="deleteTest" classname="teseCases.DeleteResourceFlowTest" time="19.446"/>
 </testsuite>

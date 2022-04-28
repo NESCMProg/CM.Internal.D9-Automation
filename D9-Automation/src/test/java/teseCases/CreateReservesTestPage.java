@@ -41,10 +41,11 @@ public class CreateReservesTestPage extends base {
 		initialization();
 		Log.info("Browser is opened");
 		Log.info("Test functionality for creating a Reserve");
-		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		loginpatron = new LoginPatron();
 		String username1 = rc.ReadCellData(1, 0);
 		String password1 = rc.ReadCellData(1, 1);
+		Thread.sleep(1000);
 		hp = new HomePage();
 		hp = loginpatron.login(username1, password1);
 		dashboardpage = new DashboardPage();

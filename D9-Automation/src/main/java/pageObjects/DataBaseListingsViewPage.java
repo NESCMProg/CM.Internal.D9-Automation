@@ -12,7 +12,7 @@ import utility.Log;
 
 public class DataBaseListingsViewPage extends base {
 	
-	@FindBy(xpath="//a[contains(text(),'Add Database listing')]")
+	@FindBy(xpath="//a[contains(text(),'Add Database Listing')]")
 	WebElement addNewDBL;
 	
 	@FindBy(xpath="//input[@id='edit-title-0-value']")
@@ -40,10 +40,10 @@ public class DataBaseListingsViewPage extends base {
 	@FindBy(xpath= "//span[contains(text(),'Database Listings')]")	
 	WebElement dashTodataBaseListingsLink;
 	
-	@FindBy(css="#edit-title")
+	@FindBy(id="edit-q")
 	WebElement searchBox;
 	
-	@FindBy(css="#edit-submit-database-listings")
+	@FindBy(css="#edit-search")
 	WebElement searchBtn;
 	
 	@FindBy(xpath="//tbody/tr[1]/td[6]/a[2]")
@@ -65,16 +65,16 @@ public class DataBaseListingsViewPage extends base {
 	WebElement TraceDeleteBtnArrow;
 
 	
-	@FindBy(css=".messages__content")
+	@FindBy(css="div.messages__content")
 	WebElement TitleHeaderError;
 	
-	@FindBy(css=".form-item__error-message")
+	@FindBy(xpath="//div[contains(text(),'Title field is required.')]")
 	WebElement titleFieldError;
 	
-	@FindBy(xpath="//main[@id='main-content']/div[1]/div[2]")
+	@FindBy(css="div.messages__content")
 	WebElement successfulDBLtMsg;
 	
-	@FindBy(css="div.site-slogan")
+	@FindBy(xpath="//h1[contains(text(),'Database listings - Listing')]")
 	WebElement viewPagesuccess;
 	
 	public DataBaseListingsViewPage() {
@@ -98,6 +98,7 @@ public class DataBaseListingsViewPage extends base {
 				String DBLMsg = successfulDBLtMsg.getText();
 				Log.info("Status Message: "+DBLMsg);
 				System.out.println(DBLMsg);
+				searchBox.click();
 				Log.info("Test Result: Pass");
 			}
 			catch(Exception e) {
@@ -157,9 +158,7 @@ public class DataBaseListingsViewPage extends base {
 		catch(Exception e) {
 			Log.error("Unable to get status message, but Database List is created");
 		}
-		Thread.sleep(2000);
-		dashboardLink.click();
-		dashToDBLLink.click();
+		Thread.sleep(1000);
 		searchBox.sendKeys(deleteDBLTitle);
 		searchBtn.click();
 		Thread.sleep(1000);

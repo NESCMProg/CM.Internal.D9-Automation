@@ -13,10 +13,10 @@ import utility.Log;
 
 public class researchGuidesViewPage extends base {
 
-	@FindBy(xpath="//a[contains(text(),'Add Research guide')]")
+	@FindBy(xpath="//a[contains(text(),'Add Research Guide')]")
 	WebElement addNewResearch;
 	
-	@FindBy(css="#edit-title-0-value")
+	@FindBy(xpath="//input[@id='edit-title-0-value']")
 	WebElement researchTitle;
 	
 	@FindBy(xpath="//select[@id='edit-field-type']")
@@ -31,16 +31,16 @@ public class researchGuidesViewPage extends base {
 	@FindBy(css="#edit-submit")
 	WebElement submitBtn;
 	
-	@FindBy(css="#edit-title")
+	@FindBy(id="edit-q")
 	WebElement searchBox;
 	
-	@FindBy(xpath="//tbody/tr[1]/td[6]/div[1]/div[1]/ul[1]/li[2]/button[1]")
+	@FindBy(xpath="//tbody/tr[1]/td[7]/div[1]/div[1]/ul[1]/li[2]/button[1]")
 	WebElement TraceDeleteBtnArrow;
 	
-	@FindBy(xpath="//tbody/tr[1]/td[6]/div[1]/div[1]/ul[1]/li[1]/a[1]")
+	@FindBy(xpath="//tbody/tr[1]/td[7]/div[1]/div[1]/ul[1]/li[1]/a[1]")
 	WebElement TracedEditBtn;
 	
-	@FindBy(css="#edit-submit-research-guides")
+	@FindBy(css="#edit-search")
 	WebElement searchBtn;
 	
 	@FindBy(xpath="//div[@class='messages status']")
@@ -58,13 +58,13 @@ public class researchGuidesViewPage extends base {
 	@FindBy(xpath="//a[contains(text(),'Dashboard')]")
 	WebElement dashboardLink;
 	
-	 @FindBy(css="div.name-and-slogan")
+	 @FindBy(xpath="//h1[contains(text(),'Research guides - Listing')]")
 	 WebElement viewSiteSlogan;
 	
 	@FindBy(xpath="//input[@value='Delete']")
 	WebElement researchGuideDelete;
 	
-	@FindBy(css="div.messages.messages-status")
+	@FindBy(css="div.messages__content")
 	WebElement createMethodSuccess;
 	
 	@FindBy(xpath="//body/div[2]/div[1]/main[1]/div[2]/div[2]/div[1]/div[1]/div[2]")
@@ -84,12 +84,7 @@ public class researchGuidesViewPage extends base {
 		catch(Exception e1) {
 			
 		}
-		try{
-			researchTitle.sendKeys(C_researchTitle);
-		}
-		catch(Exception e2){
-		}
-		
+		researchTitle.sendKeys(C_researchTitle);
 		researchType.click();
 		Select termRG = new Select(researchType);
 		termRG.selectByVisibleText(C_termRG);
@@ -100,6 +95,7 @@ public class researchGuidesViewPage extends base {
 		try {
 			submitBtn.click();
 			Thread.sleep(1000);
+			searchBox.click();
 			String RGPageSlogan = viewSiteSlogan.getText();
 			Log.info("Page Title: "+RGPageSlogan);
 			Thread.sleep(2000);
@@ -158,18 +154,16 @@ public class researchGuidesViewPage extends base {
 		catch(Exception e) {
 			
 		}
-		Thread.sleep(2000);
-		dashboardLink.click();
-		dashToResearchGuidesLink.click();
+		Thread.sleep(1000);
 		searchBox.sendKeys(D_RGTitle);
 		searchBtn.click();
 		TraceDeleteBtnArrow.click();
-		List<WebElement>options=driver.findElements(By.xpath("//tbody/tr[1]/td[6]/div[1]/div[1]/ul[1]/li"));
+		List<WebElement>options=driver.findElements(By.xpath("//tbody/tr[1]/td[7]/div[1]/div[1]/ul[1]/li"));
 		for(WebElement opt: options) {
 			if (opt.getText().equals("Delete")) {
 				opt.click();
 			}
-		}
+		}	
 
 		researchGuideDelete.click();
 		System.out.println("Research Guide is deleted");

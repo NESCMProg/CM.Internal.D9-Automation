@@ -40,6 +40,7 @@ public class DeleteDirectoryListingTest extends base {
 		Log.info("Test functionality to delete a Directory List");
 		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 		loginpatron = new LoginPatron();
+		Thread.sleep(1000);
 		String username1 = rc.ReadCellData(1, 0);
 		String password1 = rc.ReadCellData(1, 1);
 		hp = new HomePage();
@@ -76,7 +77,7 @@ public class DeleteDirectoryListingTest extends base {
 	}
 
 	@Test(dataProvider = "getdeletedirectorylistData")
-	public void deleteTest(String D_directoryName, String D_lastName, String D_jobTitle, String D_Location, String D_Linkedin, String D_LinkedinText, String D_Directory1, String D_Directory2) {
+	public void deleteTest(String D_directoryName, String D_lastName, String D_jobTitle, String D_Location, String D_Directory1, String D_Directory2) {
 		Log.info("Test Case ID: TS_DL_03");
 		Log.info("Test Designed By: Charan");
 		Log.info("Test Priority: High");
@@ -88,11 +89,12 @@ public class DeleteDirectoryListingTest extends base {
 						+ " Listings table and delete the following Directory");
 
 		try {
-			dlvp.deleteDirectoryListBtn(D_directoryName, D_lastName, D_jobTitle, D_Location, D_Linkedin, D_LinkedinText, D_Directory1, D_Directory2);
+			dlvp.deleteDirectoryListBtn(D_directoryName, D_lastName, D_jobTitle, D_Location,
+					D_Directory1, D_Directory2);
 			Log.info(D_directoryName + " " + D_lastName + " is created first");
 			Log.info(D_Directory1 + " " + D_Directory2 + " is deleted successfully");
 		} catch (Exception e1) {
-			Log.error("Failed to Delete"+D_directoryName);
+			Log.error("Failed to Delete" + D_directoryName);
 		}
 
 		Log.info("Test Result: Pass");

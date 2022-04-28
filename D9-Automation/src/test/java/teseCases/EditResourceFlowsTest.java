@@ -43,9 +43,10 @@ public class EditResourceFlowsTest extends base {
 		 String username1 = rc.ReadCellData(1,0);
 		String password1 = rc.ReadCellData(1,1);
 		hp =  loginpatron.login(username1,password1);
+		Thread.sleep(1000);
 		dashboardpage = new DashboardPage();
 		dashboardpage = hp.clickOnDashboardLink();
-		 driver.manage().timeouts().pageLoadTimeout(10,TimeUnit.SECONDS);
+		 driver.manage().timeouts().pageLoadTimeout(20,TimeUnit.SECONDS);
 		 rfvp = new resourceViewPage();
 		 rfvp = dashboardpage.clickOnResourceFlowLink();
 		

@@ -41,14 +41,16 @@ public class CreateNewsArticlesTestPage extends base {
 		initialization();
 		Log.info("Browser is opened");
 		Log.info("Test functionality for creating News Article Page");
+		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		loginpatron = new LoginPatron();
+		Thread.sleep(1000);
 		String username1 = rc.ReadCellData(1, 0);
 		String password1 = rc.ReadCellData(1, 1);
 		hp = new HomePage();
 		hp = loginpatron.login(username1, password1);
-		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 		dashboardpage = new DashboardPage();
 		dashboardpage = hp.clickOnDashboardLink();
+		Thread.sleep(1000);
 		navp = new NewsArticleViewPage();
 		navp = dashboardpage.clickOnNewsArticlesLink();
 
