@@ -25,7 +25,7 @@ public class indexPagesViewPage extends base{
 	@FindBy(xpath="//select[@id='edit-langcode-0-value']")
 	WebElement languageddl;
 	
-	@FindBy(css="#edit-submit")
+	@FindBy(xpath="//input[@id='edit-submit']")
 	WebElement submitBtn;
 	
 	@FindBy(xpath="//div[@class='messages status']")
