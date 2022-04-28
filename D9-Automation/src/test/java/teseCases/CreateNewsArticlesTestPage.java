@@ -50,7 +50,6 @@ public class CreateNewsArticlesTestPage extends base {
 		hp = loginpatron.login(username1, password1);
 		dashboardpage = new DashboardPage();
 		dashboardpage = hp.clickOnDashboardLink();
-		Thread.sleep(1000);
 		navp = new NewsArticleViewPage();
 		navp = dashboardpage.clickOnNewsArticlesLink();
 
