@@ -51,6 +51,7 @@ public class CreateIndexEntriesPageTestPage extends base {
 		hp = new HomePage();
 		hp = loginpatron.login(username1, password1);
 		dashboardpage = new DashboardPage();
+		Thread.sleep(1000);
 		dashboardpage = hp.clickOnDashboardLink();
 		ixdp = new indexDashboardPage();
 		ixdp = dashboardpage.clickOnIndexPagesLink();
