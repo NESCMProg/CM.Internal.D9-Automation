@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import resources.base;
 
 public class HomePage extends base{
-
+	WebDriverWait wait = new WebDriverWait(driver, 30);
 	@FindBy(xpath="//a[contains(text(),'Dashboard')]")
 	WebElement dashboardLink;
 	
@@ -18,7 +18,7 @@ public class HomePage extends base{
 	}
 	
 	public DashboardPage clickOnDashboardLink() throws InterruptedException {
-		Thread.sleep(1000);
+		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//a[contains(text(),'Dashboard')]")));
 		dashboardLink.click();
 		return new DashboardPage();
 	}
