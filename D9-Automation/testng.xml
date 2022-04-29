@@ -5,6 +5,9 @@
 		<classes>
 		<class name="teseCases.LoginPageTest" />
 			<class name="teseCases.CreateDataBaseListingsTestPage" />
+			<class name="teseCases.CreateNewsArticlesTestPage" />
+			<class name="teseCases.EditNewsArticlesTest" />
+			<class name="teseCases.DeleteNewsArticleTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
