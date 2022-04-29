@@ -4,12 +4,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+
 import resources.base;
 
 public class HomePage extends base{
-	@SuppressWarnings("deprecation")
-	WebDriverWait wait = new WebDriverWait(driver, 30);
 	@FindBy(xpath="//a[contains(text(),'Dashboard')]")
 	WebElement dashboardLink;
 	
@@ -19,9 +17,9 @@ public class HomePage extends base{
 		PageFactory.initElements(driver, this);	
 	}
 	
-	public DashboardPage clickOnDashboardLink() {
-		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//a[contains(text(),'Dashboard')]")));
+	public DashboardPage clickOnDashboardLink() throws InterruptedException {
 		dashboardLink.click();
+		Thread.sleep(1000);
 		return new DashboardPage();
 	}
 	
