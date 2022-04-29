@@ -159,9 +159,6 @@ public class directoryListingsViewPage extends base {
 			Log.error("Unable to get status message, but Directory List has been created");
 		}
 		Thread.sleep(1000);
-		dashboard.click();
-		dashToDirectoryLink.click();
-		Thread.sleep(1000);
 		searchBox.sendKeys(D_Directory1+" "+D_Directory2);
 		searchBtn.click();
 		Thread.sleep(1000);
