@@ -52,8 +52,8 @@ public class CreateResearchGuidesTestPage extends base {
 		String password1 = rc.ReadCellData(1, 1);
 		hp = new HomePage();
 		hp = loginpatron.login(username1, password1);
-		Thread.sleep(1000);
 		dashboardpage = new DashboardPage();
+		Thread.sleep(1000);
 		dashboardpage = hp.clickOnDashboardLink();
 		rgvp = new researchGuidesViewPage();
 		rgvp = dashboardpage.clickOnResearchGuideLink();
