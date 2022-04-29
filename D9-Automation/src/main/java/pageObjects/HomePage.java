@@ -17,7 +17,7 @@ public class HomePage extends base{
 		PageFactory.initElements(driver, this);	
 	}
 	
-	public DashboardPage clickOnDashboardLink() throws InterruptedException {
+	public DashboardPage clickOnDashboardLink() {
 		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//a[contains(text(),'Dashboard')]")));
 		dashboardLink.click();
 		return new DashboardPage();
