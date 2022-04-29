@@ -5,9 +5,17 @@
 		<classes>
 		<class name="teseCases.LoginPageTest" />
 			<class name="teseCases.CreateDataBaseListingsTestPage" />
+			<class name="teseCases.EditDatabaseListingTest" />
+			<class name="teseCases.DeleteDatabaseListingTest" />
 			<class name="teseCases.CreateNewsArticlesTestPage" />
 			<class name="teseCases.EditNewsArticlesTest" />
 			<class name="teseCases.DeleteNewsArticleTest" />
+			<class name="teseCases.createDirectoryListingsTestPage" />
+			<class name="teseCases.EditDirectoryListingsTest" />
+			<class name="teseCases.DeleteDirectoryListingTest" />
+			<class name="teseCases.CreateResearchGuidesTestPage" />
+			<class name="teseCases.EditResearchGuidesTest" />
+			<class name="teseCases.DeleteResearchGuideTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
