@@ -44,7 +44,8 @@ public class CreateResearchGuidesTestPage extends base {
 		initialization();
 		Log.info("Browser is opened");
 		Log.info("Test Functionality for creating Research Guide");
-		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 		loginpatron = new LoginPatron();
 		Thread.sleep(1000);
 		String username1 = rc.ReadCellData(1, 0);
