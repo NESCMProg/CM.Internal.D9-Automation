@@ -13,12 +13,6 @@
 			<class name="teseCases.createDirectoryListingsTestPage" />
 			<class name="teseCases.EditDirectoryListingsTest" />
 			<class name="teseCases.DeleteDirectoryListingTest" />
-			<class name="teseCases.CreateIndexEntriesPageTestPage" />
-			<class name="teseCases.EditIndexEntryTest" />
-			<class name="teseCases.DeleteIndexEntryPageTest" />
-			<class name="teseCases.CreateIndexPageTestPage" />
-			<class name="teseCases.EditIndexPageTest" />
-			<class name="teseCases.DeleteIndexPageTest" />
 			<class name="teseCases.CreateNewsArticlesTestPage" />
 			<class name="teseCases.EditNewsArticlesTest" />
 			<class name="teseCases.DeleteNewsArticleTest" />
