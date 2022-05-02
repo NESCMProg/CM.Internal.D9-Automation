@@ -18,6 +18,7 @@ public class HomePage extends base{
 	}
 	
 	public DashboardPage clickOnDashboardLink() throws InterruptedException {
+		driver.manage().timeouts().implicitlyWait(45,TimeUnit.SECONDS);
 		dashboardLink.click();
 		Thread.sleep(1000);
 		return new DashboardPage();
