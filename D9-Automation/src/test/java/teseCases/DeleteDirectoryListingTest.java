@@ -38,8 +38,8 @@ public class DeleteDirectoryListingTest extends base {
 		initialization();
 		Log.info("Browser is opened");
 		Log.info("Test functionality to delete a Directory List");
-		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(45, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);
 		loginpatron = new LoginPatron();
 		Thread.sleep(1000);
 		String username1 = rc.ReadCellData(1, 0);
