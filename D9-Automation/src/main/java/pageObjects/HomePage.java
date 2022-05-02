@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 import resources.base;
 
 public class HomePage extends base{
-	@FindBy(xpath="//a[contains(text(),'Dashboard')]")
+	@FindBy(css="a.toolbar-item.is-active")
 	WebElement dashboardLink;
 	
 
@@ -19,8 +19,8 @@ public class HomePage extends base{
 	
 	public DashboardPage clickOnDashboardLink() throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);
-		dashboardLink.click();
 		Thread.sleep(1000);
+		dashboardLink.click();
 		return new DashboardPage();
 	}
 	
