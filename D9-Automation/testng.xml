@@ -4,9 +4,6 @@
 	<test name="Test" preserve-order="true">
 		<classes>
 			<class name="teseCases.LoginPageTest" />
-			<class name="teseCases.CreateCustomBlockTestPage" />
-			<class name="teseCases.EditCustomBlockTest" />
-			<class name="teseCases.DeleteCustomTest" />
 			<class name="teseCases.CreateDataBaseListingsTestPage" />
 			<class name="teseCases.EditDatabaseListingTest" />
 			<class name="teseCases.DeleteDatabaseListingTest" />
@@ -28,9 +25,6 @@
 			<class name="teseCases.CreateResourceFlowTestPage" />
 			<class name="teseCases.EditResourceFlowsTest" />
 			<class name="teseCases.DeleteResourceFlowTest" />
-			<class name="teseCases.CreateCalloutTestPage" />
-			<class name="teseCases.EditCalloutsTest" />
-			<class name="teseCases.DeleteCalloutTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
