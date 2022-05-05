@@ -28,6 +28,9 @@
 			<class name="teseCases.CreateResourceFlowTestPage" />
 			<class name="teseCases.EditResourceFlowsTest" />
 			<class name="teseCases.DeleteResourceFlowTest" />
+			<class name="teseCases.CreateCalloutTestPage" />
+			<class name="teseCases.EditCalloutsTest" />
+			<class name="teseCases.DeleteCalloutTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
