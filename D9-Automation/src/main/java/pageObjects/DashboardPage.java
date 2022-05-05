@@ -11,7 +11,7 @@ public class DashboardPage extends base {
 	@FindBy(xpath="//a[contains(text(),'Dashboard')]")
 	WebElement dashboardLink;
 	
-	@FindBy(linkText="Callouts")
+	@FindBy(xpath="//div[@data-id='ds-50000-callouts-stacks-dashboardtilesstacks-callout']/div[1]/h4/a")
 	WebElement calloutLink;
 		
 	@FindBy(linkText= "Custom blocks")
