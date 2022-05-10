@@ -48,6 +48,7 @@ public class CreatePagesTestPage extends base {
 		hp = new HomePage();
 		hp = loginpatron.login(username1, password1);
 		dashboardpage = new DashboardPage();
+		Thread.sleep(1000);
 		dashboardpage = hp.clickOnDashboardLink();
 		pvp = new pagesViewPage();
 		pvp = dashboardpage.clickOnPagesLink();

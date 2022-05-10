@@ -41,7 +41,8 @@ public class CreateNewsArticlesTestPage extends base {
 		initialization();
 		Log.info("Browser is opened");
 		Log.info("Test functionality for creating News Article Page");
-		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(45, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(45,TimeUnit.SECONDS);
 		loginpatron = new LoginPatron();
 		Thread.sleep(1000);
 		String username1 = rc.ReadCellData(1, 0);
@@ -50,7 +51,6 @@ public class CreateNewsArticlesTestPage extends base {
 		hp = loginpatron.login(username1, password1);
 		dashboardpage = new DashboardPage();
 		dashboardpage = hp.clickOnDashboardLink();
-		Thread.sleep(1000);
 		navp = new NewsArticleViewPage();
 		navp = dashboardpage.clickOnNewsArticlesLink();
 

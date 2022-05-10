@@ -8,6 +8,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.testng.Assert;
+import org.openqa.selenium.Capabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
@@ -32,8 +34,13 @@ HomePage hp;
 	@BeforeMethod
 	public void setUp() throws IOException {
 		initialization();
-		System.out.println("driver is initialized for Login Patron Page");
-		Log.info("Browser Opened the Application");
+		Capabilities cap = ((RemoteWebDriver) driver).getCapabilities();
+		 String browserName = cap.getBrowserName().toLowerCase();
+		 System.out.println(browserName);
+		 Log.info("Test executed in browser: "+browserName);
+		 String bv = cap.getVersion().toString();
+		 Log.info("Browser Version is: "+bv);
+		 System.out.println("version is: "+bv);
 		 loginpatron = new LoginPatron();
 		 hp = new HomePage();
 		 

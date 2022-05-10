@@ -37,7 +37,8 @@ public class DeleteResourceFlowTest extends base {
 		initialization();
 		Log.info("Browser is opened");
 		Log.info("Test functionality to delete a Resource Flow");
-		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(45, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);
 		loginpatron = new LoginPatron();
 		Thread.sleep(1000);
 		String username1 = rc.ReadCellData(1, 0);

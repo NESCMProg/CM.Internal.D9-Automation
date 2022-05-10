@@ -44,15 +44,16 @@ public class CreateResearchGuidesTestPage extends base {
 		initialization();
 		Log.info("Browser is opened");
 		Log.info("Test Functionality for creating Research Guide");
-		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(45, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(45,TimeUnit.SECONDS);
 		loginpatron = new LoginPatron();
 		Thread.sleep(1000);
 		String username1 = rc.ReadCellData(1, 0);
 		String password1 = rc.ReadCellData(1, 1);
 		hp = new HomePage();
 		hp = loginpatron.login(username1, password1);
-		Thread.sleep(1000);
 		dashboardpage = new DashboardPage();
+		Thread.sleep(1000);
 		dashboardpage = hp.clickOnDashboardLink();
 		rgvp = new researchGuidesViewPage();
 		rgvp = dashboardpage.clickOnResearchGuideLink();

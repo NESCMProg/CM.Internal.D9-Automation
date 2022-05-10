@@ -39,7 +39,8 @@ public class EditNewsArticlesTest extends base {
 		initialization();
 		Log.info("Browser opened");
 		Log.info("News Article Edit Functionality");
-		 driver.manage().timeouts().pageLoadTimeout(20,TimeUnit.SECONDS);
+		 driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 		 loginpatron = new LoginPatron();
 		 String username1 = rc.ReadCellData(1,0);
 		String password1 = rc.ReadCellData(1,1);

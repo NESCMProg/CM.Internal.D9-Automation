@@ -38,7 +38,8 @@ public class DeleteDatabaseListingTest extends base {
 		initialization();
 		Log.info("Browser is opened");
 		Log.info("Test functionality to delete a Database List");
-		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(45, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(45,TimeUnit.SECONDS);
 		loginpatron = new LoginPatron();
 		String username1 = rc.ReadCellData(1, 0);
 		String password1 = rc.ReadCellData(1, 1);
