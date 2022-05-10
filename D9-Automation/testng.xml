@@ -4,6 +4,27 @@
 	<test name="Test" preserve-order="true">
 		<classes>
 			<class name="teseCases.LoginPageTest" />
+			<class name="teseCases.CreateCustomBlockTestPage" />
+			<class name="teseCases.EditCustomBlockTest" />
+			<class name="teseCases.DeleteCustomTest" />
+			<class name="teseCases.CreateDataBaseListingsTestPage" />
+			<class name="teseCases.EditDatabaseListingTest" />
+			<class name="teseCases.DeleteDatabaseListingTest" />
+			<class name="teseCases.createDirectoryListingsTestPage" />
+			<class name="teseCases.EditDirectoryListingsTest" />
+			<class name="teseCases.DeleteDirectoryListingTest" />
+			<class name="teseCases.CreateNewsArticlesTestPage" />
+			<class name="teseCases.EditNewsArticlesTest" />
+			<class name="teseCases.DeleteNewsArticleTest" />
+			<class name="teseCases.CreateResearchGuidesTestPage" />
+			<class name="teseCases.EditResearchGuidesTest" />
+			<class name="teseCases.DeleteResearchGuideTest" />
+			<class name="teseCases.CreateReservesTestPage" />
+			<class name="teseCases.EditReservesTest" />
+			<class name="teseCases.DeleteReservesTest" />
+			<class name="teseCases.CreateResourceFlowTestPage" />
+			<class name="teseCases.EditResourceFlowsTest" />
+			<class name="teseCases.DeleteResourceFlowTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
