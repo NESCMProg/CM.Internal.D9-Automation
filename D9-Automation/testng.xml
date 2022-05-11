@@ -19,9 +19,6 @@
 			<class name="teseCases.CreateResearchGuidesTestPage" />
 			<class name="teseCases.EditResearchGuidesTest" />
 			<class name="teseCases.DeleteResearchGuideTest" />
-			<class name="teseCases.CreateReservesTestPage" />
-			<class name="teseCases.EditReservesTest" />
-			<class name="teseCases.DeleteReservesTest" />
 			<class name="teseCases.CreateResourceFlowTestPage" />
 			<class name="teseCases.EditResourceFlowsTest" />
 			<class name="teseCases.DeleteResourceFlowTest" />
