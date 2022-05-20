@@ -3,7 +3,7 @@
 <suite name="Suite1">
 	<test name="Test" preserve-order="true">
 		<classes>
-			<class name="teseCases.CreateResourceFlowTestPage" />
+			<class name="teseCases.LoginPageTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
