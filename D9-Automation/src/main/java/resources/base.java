@@ -32,7 +32,7 @@ public class base {
 				"src\\main\\java\\library\\config");
 		prop.load(fis);
 		
-		String browserName = System.getProperty("browser");
+		//String browserName = System.getProperty("browser");
 		//String browserName = prop.getProperty("browser");
                 String browserName = System.getProperty("browser");
 	
