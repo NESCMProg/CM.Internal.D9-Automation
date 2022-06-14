@@ -3,10 +3,7 @@
 <suite name="Suite1">
 	<test name="Test" preserve-order="true">
 		<classes>
-<<<<<<< HEAD
-=======
 			<class name="teseCases.LoginPageTest" />
->>>>>>> 77867e4b707baa6a7dcc786a9ddb113cbc4089d3
 			<class name="teseCases.CreateResourceFlowTestPage" />
 		</classes>
 	</test> <!-- Test -->
